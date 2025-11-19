@@ -1,13 +1,12 @@
 ---
 # Display name
-title: Alex Johnson
-
+title: Yue Liu
 # Name pronunciation (optional)
 name_pronunciation: ''
 
 # Full name (for SEO)
-first_name: Alex
-last_name: Johnson
+first_name: Liu
+last_name: Yue
 
 # Pronouns (optional)
 pronouns: he/him
