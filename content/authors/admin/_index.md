@@ -71,7 +71,7 @@ work:
     company_url: 'https://www.chinatelecom.com.cn/'
     icon: ''
     date_start: 2024-06-30
-    date_end: 2024-8-31
+    date_end: 2024-08-31
     summary: |
       Worked on AI infra and high performance computing.
 
