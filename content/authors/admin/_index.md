@@ -58,13 +58,21 @@ education:
 
 work:
   - position: LLM Foundation Model Research Intern
-    company_name: China Telecom Research Institute (天翼云)
-    company_url: 'https://www.chinatelecom.com.cn/'
+    company_name: PKU DLIB (Peking University Deep Learning & Intelligence Lab)
+    company_url: ''
     icon: ''
     date_start: 2025-02-01
     date_end: 2025-07-01
     summary: |
-      LLM foundation model research under the mentorship of DeepSeek core scientists and ACL Best Paper authors. Focus areas: pre-training methodology, RLHF alignment, and large-scale distributed training infrastructure.
+      LLM efficient reasoning research under the mentorship of ACL Best Paper authors. Focus areas: native sparse attention mechanisms, test-time training (TTT), and inference-time compute optimization.
+  - position: Co-founder — AI Robotics Studio
+    company_name: 子豪工作室 (Studio with Zihao)
+    company_url: ''
+    icon: ''
+    date_start: 2024-06-01
+    date_end: ''
+    summary: |
+      Co-founded an AI robotics content and product studio with 子豪兄 (Tongji, open-source robotics creator & Bilibili UP主). Collaborated on open-source robot hardware projects, produced technical demos and educational content, and explored commercialization of embodied AI applications.
   - position: Research Intern — Reinforcement Learning & Robotic Control
     company_name: Sino-German Industry 4.0 Lab (Tongji × Siemens)
     company_url: ''

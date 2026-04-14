@@ -16,6 +16,12 @@ links:
     name: Demo Video
 ---
 
+{{< video src="demo.mp4" controls="yes" >}}
+
+{{< figure src="featured.png" caption="Three.js real-time robotic arm visualization — adjusting slider parameters updates the 3D model in real time." >}}
+
+---
+
 A joint research project between Tongji University's Sino-German Industry 4.0 Lab and Siemens, replacing legacy particle swarm optimization (PSO) with deep reinforcement learning for higher-precision robotic arm control.
 
 **Technical work:**

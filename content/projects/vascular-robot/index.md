@@ -16,7 +16,14 @@ links:
     icon_pack: fab
     name: Code
     url: https://github.com/miracle-techlink
+  - icon: brands/rss
+    name: Blog Post
+    url: https://miracle-techlink.github.io/posts/20040508.html
 ---
+
+{{< link-card url="https://github.com/miracle-techlink" title="miracle-techlink / GitHub" desc="stEVE 平台代码仓库" >}}
+
+{{< link-card url="https://miracle-techlink.github.io/posts/20040508.html" title="Blog: VLA 如何落地医疗机器人" desc="miracle-techlink.github.io · 综述文章" >}}
 
 A complete research platform for AI-assisted endovascular intervention, spanning preoperative 3D planning through intraoperative RL-guided navigation.
 
@@ -30,3 +37,13 @@ A complete research platform for AI-assisted endovascular intervention, spanning
 **Ongoing research:** Training a diffusion-based trajectory planner on large-scale SOFA-generated synthetic data, transferring to real vascular geometries — targeting to overcome clinical data scarcity.
 
 **Affiliations:** Tongji University × PKU DLIB | 2026
+
+---
+
+### System Architecture
+
+{{< figure src="eve_architecture.png" caption="stEVE simulation pipeline: vessel tree, instrument, SOFA engine, and fluoroscopy rendering." >}}
+
+### Clinical Navigation Demo
+
+{{< figure src="demo_clinical.png" caption="Catheter navigation in patient-specific vascular anatomy — final frame of a clinical test episode." >}}

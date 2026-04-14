@@ -1,6 +1,6 @@
 ---
-title: 'OpenDuckMini — Open-Source Bipedal Robot'
-summary: Open-source bipedal duck robot built with 3D-printed parts, servo actuators, and Raspberry Pi. Capable of dynamic walking and running — tested on real track. Community documentation co-authored.
+title: 'Open-Source Robotics Collaboration with 子豪兄'
+summary: Joint robotics projects with Zihao (同济大学 B站 UP主) — OpenDuckMini bipedal robot, quadruped platforms, and community hardware documentation co-authored at Tongji University.
 tags:
   - Robotics
   - Open Source
@@ -16,33 +16,42 @@ links:
     icon_pack: fas
     name: Documentation
     url: https://zihao-ai.feishu.cn/wiki/HM3WwVsyEiOs4wkfR4McvRaUn5d
+  - icon: brands/bilibili
+    name: Bilibili
+    url: https://space.bilibili.com/1900783
   - icon: github
     icon_pack: fab
     name: GitHub
     url: https://github.com/miracle-techlink
 ---
 
-**OpenDuckMini** is an open-source miniature bipedal robot platform co-developed with [子豪兄 (同济大学 B站 UP主)](https://space.bilibili.com/1900783) — one of China's most prominent AI education creators.
+A series of open-source robotics projects co-built with [子豪兄](https://space.bilibili.com/1900783) — Tongji University's most prominent AI/robotics education creator — focused on making embodied AI hardware accessible to the community.
 
-**Hardware:**
-- 3D-printed structural components (PLA/PETG)
-- Servo actuators for each joint (visible in hardware photo)
-- Raspberry Pi onboard compute
-- Custom PCB wiring harness
+---
 
-**Capabilities:**
-- Dynamic bipedal walking and running gait
-- Field-tested on university running track (see featured photo)
-- Open hardware design — fully reproducible by the community
+### OpenDuckMini — Bipedal Duck Robot
 
-**Community:**
-- Full build documentation published on Feishu Wiki
-- Part of the robotics studio co-founded with 子豪兄 at Tongji University
+{{< video src="demo.mp4" controls="yes" >}}
 
-This project reflects a core belief: **democratizing embodied AI hardware** so that anyone can build and experiment with legged robots, accelerating the research-to-product cycle.
+{{< figure src="2.jpg" caption="Hardware internals: 3D-printed PLA/PETG frame, servo actuators at each joint, Raspberry Pi onboard compute, custom PCB wiring harness." >}}
 
-**Demo videos:**
+- Dynamic walking and running gait — field-tested on Tongji University track
+- 3D-printed structural components (PLA/PETG), servo-actuated joints, Raspberry Pi compute
 
-{{< video src="walk.mp4" controls="yes" >}}
+{{< link-card url="https://zihao-ai.feishu.cn/wiki/HM3WwVsyEiOs4wkfR4McvRaUn5d" title="OpenDuckMini 完整构建文档" desc="硬件组装 · 标定流程 · 步态调试指南" >}}
 
-{{< video src="run.mp4" controls="yes" >}}
+{{< link-card url="https://space.bilibili.com/1900783" title="子豪兄 Bilibili 主页" desc="同济大学 AI/机器人教育创作者" >}}
+
+{{< link-card url="https://github.com/miracle-techlink" title="miracle-techlink / GitHub" desc="开源机器人项目代码仓库" >}}
+
+---
+
+### Quadruped Platform
+
+Four-legged robot platform for reinforcement learning locomotion experiments and sim-to-real transfer research, built alongside the bipedal work as part of the same hardware studio.
+
+---
+
+### Community & Mission
+
+All projects are fully open-source and documented — reproducible by anyone with access to a 3D printer and basic electronics. The goal is to **democratize embodied AI hardware** and accelerate the research-to-product cycle for students and researchers across China.

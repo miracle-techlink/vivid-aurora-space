@@ -30,3 +30,21 @@ An end-to-end medical AI platform developed from Oct 2024 to Aug 2025, covering 
 **Reflection:** Identified product-market fit issues early — physician trust barriers and unclear monetization in B2B healthcare remain the core challenge for medical AI products.
 
 **Stack:** PyTorch · Transformers · Coze · Vue · Cloud deployment
+
+---
+
+### Model Training Pipeline
+
+{{< figure src="arch.png" caption="Three-stage fine-tuning: Medical Alignment → Instruction Tuning & Routing → Domain Expert Routing (reference: EMNLP 2024)." >}}
+
+---
+
+### Coze Multi-Agent Workflow
+
+{{< figure src="coze.png" caption="Coze multi-agent workflow for medication assistance, health check-in, and domain routing." >}}
+
+---
+
+### Platform Frontend
+
+{{< figure src="featured.png" caption="智慧医疗AI平台 — symptom analysis, drug recommendation, visual report OCR, deployed and validated with hospital feedback." >}}

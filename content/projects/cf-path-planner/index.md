@@ -1,6 +1,6 @@
 ---
-title: 'CF-Path-Planner: Stress-Driven Toolpath Planning for CCF 3D Printing'
-summary: FEA + topology optimization + geodesic path planning for multi-axis continuous carbon fiber 3D printing. Aligns fiber deposition with principal stress directions for maximum structural performance.
+title: 'MacroHard Maker — CCF 3D Printing Path Planner'
+summary: Stress-driven toolpath planning for multi-axis continuous carbon fiber 3D printing. FEA + topology optimization + geodesic path planning, with a desktop app and FastAPI backend.
 tags:
   - Additive Manufacturing
   - Path Planning
@@ -13,11 +13,21 @@ image:
 links:
   - icon: github
     icon_pack: fab
-    name: Code
-    url: https://github.com/miracle-techlink
+    name: Core (Backend)
+    url: https://github.com/miracle-techlink/macrohard-maker-core
+  - icon: github
+    icon_pack: fab
+    name: Desktop App
+    url: https://github.com/miracle-techlink/macrohard-maker-desktop
 ---
 
-A full-stack toolpath planning system for multi-axis continuous carbon fiber (CCF) FFF printers, with a Next.js 15 web interface for real-time 3D visualization.
+**MacroHard Maker** is a full-stack toolpath planning system for multi-axis continuous carbon fiber (CCF) FFF printers, aligning fiber deposition with principal stress directions for maximum structural performance.
+
+{{< link-card url="https://github.com/miracle-techlink/macrohard-maker-core" title="macrohard-maker-core" desc="Python 后端核心：FastAPI + FEA + 路径规划 + G-code 生成" >}}
+
+{{< link-card url="https://github.com/miracle-techlink/macrohard-maker-desktop" title="macrohard-maker-desktop" desc="连续碳纤维 3D 打印路径规划桌面软件" >}}
+
+---
 
 **Algorithm pipeline:**
 - **FEA** (scikit-fem) — linear elastic stress analysis, principal stress direction extraction
@@ -26,4 +36,4 @@ A full-stack toolpath planning system for multi-axis continuous carbon fiber (CC
 - **XYA motion planner** — helical winding + infill layer G-code generation (16× speedup)
 - **Three.js visualization** — real-time layer-by-layer preview in browser
 
-**Stack:** Python · scikit-fem · Next.js 15 · Three.js · TypeScript · Tailwind
+**Stack:** Python · FastAPI · scikit-fem · Next.js 15 · Three.js · TypeScript · Tailwind
