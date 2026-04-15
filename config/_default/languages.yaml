@@ -16,23 +16,23 @@ zh:
   menu:
     main:
       - name: 主页
-        url: /zh/
+        url: /
         weight: 10
       - name: 论文
-        url: /zh/#papers
+        url: /#papers
         weight: 11
       - name: 初创
-        url: /zh/#startup
+        url: /#startup
         weight: 12
       - name: 博客
-        url: /zh/#news
+        url: /#news
         weight: 13
       - name: 经历
-        url: /zh/experience/
+        url: /experience/
         weight: 20
       - name: 项目
-        url: /zh/projects/
+        url: /projects/
         weight: 30
       - name: 奖项
-        url: /zh/awards/
+        url: /awards/
         weight: 35
