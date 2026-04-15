@@ -1,0 +1,22 @@
+main:
+  - name: 主页
+    url: zh/
+    weight: 10
+  - name: 论文
+    url: zh/#papers
+    weight: 11
+  - name: 初创
+    url: zh/#startup
+    weight: 12
+  - name: 博客
+    url: zh/#news
+    weight: 13
+  - name: 经历
+    url: experience/
+    weight: 20
+  - name: 项目
+    url: projects/
+    weight: 30
+  - name: 奖项
+    url: awards/
+    weight: 35

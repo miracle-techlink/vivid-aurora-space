@@ -13,26 +13,3 @@ zh:
   title: 刘越 — 具身智能研究员
   params:
     description: 具身智能基础模型研究者 / 初创公司创始人
-  menu:
-    main:
-      - name: 主页
-        url: /
-        weight: 10
-      - name: 论文
-        url: /#papers
-        weight: 11
-      - name: 初创
-        url: /#startup
-        weight: 12
-      - name: 博客
-        url: /#news
-        weight: 13
-      - name: 经历
-        url: /experience/
-        weight: 20
-      - name: 项目
-        url: /projects/
-        weight: 30
-      - name: 奖项
-        url: /awards/
-        weight: 35
