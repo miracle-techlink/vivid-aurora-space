@@ -72,11 +72,24 @@ jobs:
       id: pages
       uses: actions/configure-pages@v5
 
-    - name: Build with Hugo
+    - name: Build with Hugo (retry on deferred template panic)
       env:
         HUGO_ENVIRONMENT: production
         HUGO_CACHEDIR: /tmp/hugo_cache_runner/
-      run: hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+      run: |
+        for i in $(seq 1 20); do
+          hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/" > /tmp/hugo_build.log 2>&1
+          if grep -q "Total in" /tmp/hugo_build.log; then
+            echo "Hugo build succeeded on attempt $i"
+            cat /tmp/hugo_build.log
+            exit 0
+          fi
+          echo "Attempt $i failed, retrying..."
+          cat /tmp/hugo_build.log | tail -5
+        done
+        echo "Hugo build failed after 20 attempts"
+        cat /tmp/hugo_build.log
+        exit 1
 
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v4
