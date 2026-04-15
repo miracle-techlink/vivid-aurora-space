@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>仿真到真实 | 刘越 — 具身智能研究员</title>
+    <link>http://localhost:1313/zh/tags/%E4%BB%BF%E7%9C%9F%E5%88%B0%E7%9C%9F%E5%AE%9E/</link>
+      <atom:link href="http://localhost:1313/zh/tags/%E4%BB%BF%E7%9C%9F%E5%88%B0%E7%9C%9F%E5%AE%9E/index.xml" rel="self" type="application/rss+xml" />
+    <description>仿真到真实</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>zh-Hans</language><lastBuildDate>Sun, 01 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu_982c5d63a71b2961.png</url>
+      <title>仿真到真实</title>
+      <link>http://localhost:1313/zh/tags/%E4%BB%BF%E7%9C%9F%E5%88%B0%E7%9C%9F%E5%AE%9E/</link>
+    </image>
+    
+    <item>
+      <title>合成数据驱动的扩散模型用于血管介入引导</title>
+      <link>http://localhost:1313/zh/publications/vascular-diffusion/</link>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/publications/vascular-diffusion/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

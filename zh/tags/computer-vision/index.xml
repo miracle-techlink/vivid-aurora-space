@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Computer Vision | 刘越 — 具身智能研究员</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/tags/computer-vision/</link><atom:link href="https://miracle-techlink.github.io/vivid-aurora-space/zh/tags/computer-vision/index.xml" rel="self" type="application/rss+xml"/><description>Computer Vision</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>zh-Hans</language><lastBuildDate>Wed, 01 May 2024 00:00:00 +0000</lastBuildDate><image><url>https://miracle-techlink.github.io/vivid-aurora-space/media/icon_hu_982c5d63a71b2961.png</url><title>Computer Vision</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/tags/computer-vision/</link></image><item><title>AGV 迎宾巡检机器人 — 同济大学落地部署</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/agv-reception/</link><pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/agv-reception/</guid><description>&lt;p>参与研发面向同济大学展厅与教学楼的智能 AGV 机器人平台，集&lt;strong>迎宾&lt;/strong>与&lt;strong>巡检&lt;/strong>两大角色于共用 AGV 底座，搭载模块化 AI 大脑架构。&lt;/p>
+&lt;p>&lt;strong>个人贡献：&lt;/strong> 主导&lt;strong>中东客户阿拉伯语语音模块本地化&lt;/strong>落地，包括阿拉伯语 ASR、TTS 及交互流程适配，支撑海外商业部署。&lt;/p>
+&lt;hr>
+&lt;h3 id="落地场景">落地场景&lt;/h3>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/agv-reception/featured.jpg"
+alt="左：迎宾机器人同济展厅内投放使用。右：巡检机器人同济教学楼投放使用。">&lt;figcaption>
+&lt;p>左：迎宾机器人同济展厅内投放使用。右：巡检机器人同济教学楼投放使用。&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;hr>
+&lt;h3 id="系统架构">系统架构&lt;/h3>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/agv-reception/arch.png"
+alt="双脑架构：AI大脑（数据分析/模型推理/人机交互）&amp;#43; AGV大脑（自主导航控制器）统一底盘平台。">&lt;figcaption>
+&lt;p>双脑架构：AI大脑（数据分析/模型推理/人机交互）+ AGV大脑（自主导航控制器）统一底盘平台。&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>机器人采用&lt;strong>双脑架构&lt;/strong>：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>AI 大脑&lt;/strong> — 负责数据分析、模型推理、人机交互（视觉、NLP、多模态）&lt;/li>
+&lt;li>&lt;strong>AGV 大脑&lt;/strong> — 自主导航控制器（SLAM、路径规划、电机控制）&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="硬件配置">硬件配置&lt;/h3>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/agv-reception/hardware.png"
+alt="硬件：T1 工业级激光雷达、SONY 4G i640 计算单元、60W×2 无刷驱动电机、24V/16Ah 电池组。">&lt;figcaption>
+&lt;p>硬件：T1 工业级激光雷达、SONY 4G i640 计算单元、60W×2 无刷驱动电机、24V/16Ah 电池组。&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>模块&lt;/th>
+&lt;th>参数&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>激光雷达&lt;/td>
+&lt;td>单线，180° 视角，测距精度 0.1°&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>计算单元&lt;/td>
+&lt;td>SONY 4G i640，Ubuntu 16.04&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>驱动&lt;/td>
+&lt;td>橡胶车轮，60W×2 无刷电机，最高速 0.5m/s&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>供电&lt;/td>
+&lt;td>18650 锂电，24V/16Ah，续航约 2h&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="感知能力">感知能力&lt;/h3>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/agv-reception/sensors.png"
+alt="人员监测（人脸/穿戴/姿态/行为识别）× 环境监测（温湿度/烟雾/火警）">&lt;figcaption>
+&lt;p>人员监测（人脸/穿戴/姿态/行为识别）× 环境监测（温湿度/烟雾/火警）&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>&lt;strong>人员监测：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>人脸识别与比对&lt;/li>
+&lt;li>穿戴识别（衣物、着装规范）&lt;/li>
+&lt;li>姿态检测（人体骨骼关键点）&lt;/li>
+&lt;li>行为识别（吸烟检测、摔倒预警）&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>环境监测：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>温湿度检测（区域温度 + 物体温度）&lt;/li>
+&lt;li>烟雾报警（有害气体 + 烟雾）&lt;/li>
+&lt;li>火警预警（融合温度、热图、烟雾多源）&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="人脸识别与边缘-ai">人脸识别与边缘 AI&lt;/h3>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/agv-reception/face.png"
+alt="人脸识别 &amp;#43; 红外测温实时上传，支持二次开发与定制化功能扩展。">&lt;figcaption>
+&lt;p>人脸识别 + 红外测温实时上传，支持二次开发与定制化功能扩展。&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;ul>
+&lt;li>人脸识别 + 红外测温数据实时上传后台&lt;/li>
+&lt;li>考勤数据大屏可视化&lt;/li>
+&lt;li>支持二次开发，可定制化功能模块（含中东客户阿拉伯语语音交互落地）&lt;/li>
+&lt;/ul></description></item></channel></rss>

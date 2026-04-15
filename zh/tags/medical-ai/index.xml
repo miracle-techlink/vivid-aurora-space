@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Medical AI | 刘越 — 具身智能研究员</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/tags/medical-ai/</link><atom:link href="https://miracle-techlink.github.io/vivid-aurora-space/zh/tags/medical-ai/index.xml" rel="self" type="application/rss+xml"/><description>Medical AI</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>zh-Hans</language><lastBuildDate>Fri, 01 Aug 2025 00:00:00 +0000</lastBuildDate><image><url>https://miracle-techlink.github.io/vivid-aurora-space/media/icon_hu_982c5d63a71b2961.png</url><title>Medical AI</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/tags/medical-ai/</link></image><item><title>医疗 AI 问诊平台</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/medical-ai/</link><pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/medical-ai/</guid><description>&lt;p>从 2024 年 10 月到 2025 年 8 月自研的端到端医疗 AI 平台，涵盖模型训练与产品部署全流程。&lt;/p>
+&lt;p>&lt;strong>第一部分 — 多模态医疗大模型：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>三阶段微调：医学对齐 → 指令微调与路由 → 领域专家路由&lt;/li>
+&lt;li>CT/MRI 图像与医学文本的跨注意力对齐&lt;/li>
+&lt;li>MoE 式路由：将任务分配至专项专家模块（放射科、临床文本等）&lt;/li>
+&lt;li>架构参考：EMNLP 2024 路由框架&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>第二部分 — 云端平台：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Coze 多智能体工作流，覆盖用药辅助与健康打卡&lt;/li>
+&lt;li>影像分析 + 报告 OCR 流水线&lt;/li>
+&lt;li>Web 前端：症状分析、药品推荐、健康知识库&lt;/li>
+&lt;li>已部署并获得真实医院反馈验证&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>反思：&lt;/strong> 较早识别出产品市场匹配问题 — 医生信任壁垒与 B2B 医疗变现路径不清晰，是医疗 AI 产品的核心挑战。&lt;/p>
+&lt;p>&lt;strong>技术栈：&lt;/strong> PyTorch · Transformers · Coze · Vue · 云端部署&lt;/p>
+&lt;hr>
+&lt;h3 id="模型训练架构">模型训练架构&lt;/h3>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/medical-ai/arch.png"
+alt="三阶段微调流程：医学对齐 → 指令微调与路由 → 领域专家路由（参考 EMNLP 2024）。">&lt;figcaption>
+&lt;p>三阶段微调流程：医学对齐 → 指令微调与路由 → 领域专家路由（参考 EMNLP 2024）。&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;hr>
+&lt;h3 id="coze-多智能体工作流">Coze 多智能体工作流&lt;/h3>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/medical-ai/coze.png"
+alt="Coze 多智能体工作流，覆盖用药辅助、健康打卡与领域路由。">&lt;figcaption>
+&lt;p>Coze 多智能体工作流，覆盖用药辅助、健康打卡与领域路由。&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;hr>
+&lt;h3 id="平台前端">平台前端&lt;/h3>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/medical-ai/featured.png"
+alt="智慧医疗AI平台 — 症状分析、药品推荐、影像报告 OCR，已部署并获得医院反馈验证。">&lt;figcaption>
+&lt;p>智慧医疗AI平台 — 症状分析、药品推荐、影像报告 OCR，已部署并获得医院反馈验证。&lt;/p>
+&lt;/figcaption>
+&lt;/figure></description></item></channel></rss>

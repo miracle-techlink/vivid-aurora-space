@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>推理优化 | 刘越 — 具身智能研究员</title>
+    <link>http://localhost:1313/zh/tags/%E6%8E%A8%E7%90%86%E4%BC%98%E5%8C%96/</link>
+      <atom:link href="http://localhost:1313/zh/tags/%E6%8E%A8%E7%90%86%E4%BC%98%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    <description>推理优化</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>zh-Hans</language><lastBuildDate>Mon, 01 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu_982c5d63a71b2961.png</url>
+      <title>推理优化</title>
+      <link>http://localhost:1313/zh/tags/%E6%8E%A8%E7%90%86%E4%BC%98%E5%8C%96/</link>
+    </image>
+    
+    <item>
+      <title>可部署视觉-语言-动作策略的高效推理基础设施</title>
+      <link>http://localhost:1313/zh/publications/vla-infra/</link>
+      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/publications/vla-infra/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

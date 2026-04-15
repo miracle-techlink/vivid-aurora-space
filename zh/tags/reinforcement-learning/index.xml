@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Reinforcement Learning | 刘越 — 具身智能研究员</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/tags/reinforcement-learning/</link><atom:link href="https://miracle-techlink.github.io/vivid-aurora-space/zh/tags/reinforcement-learning/index.xml" rel="self" type="application/rss+xml"/><description>Reinforcement Learning</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>zh-Hans</language><lastBuildDate>Thu, 01 Feb 2024 00:00:00 +0000</lastBuildDate><image><url>https://miracle-techlink.github.io/vivid-aurora-space/media/icon_hu_982c5d63a71b2961.png</url><title>Reinforcement Learning</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/tags/reinforcement-learning/</link></image><item><title>机械臂仿真引擎 — 同济×西门子工业 4.0 实验室</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/robotic-arm-sim/</link><pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/robotic-arm-sim/</guid><description>&lt;a href="https://www.bilibili.com/video/BV1FTnDzVEzA/" target="_blank" rel="noopener"
+class="group flex items-center gap-4 no-underline rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3 my-3 shadow-sm hover:shadow-md hover:border-zinc-300 dark:hover:border-zinc-500 transition-all duration-200">
+&lt;span class="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-lg text-white" style="background:#00a1d6">
+&lt;svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">&lt;path d="M17.813 4.653h.854c1.51.054 2.769.578 3.773 1.574 1.004.995 1.524 2.249 1.56 3.76v7.36c-.036 1.51-.556 2.769-1.56 3.773s-2.262 1.524-3.773 1.56H5.333c-1.51-.036-2.769-.556-3.773-1.56S.036 18.858 0 17.347v-7.36c.036-1.511.556-2.765 1.56-3.76 1.004-.996 2.262-1.52 3.773-1.574h.774l-1.174-1.12a1.234 1.234 0 0 1-.373-.906c0-.356.124-.658.373-.907l.027-.027c.267-.249.573-.373.92-.373.347 0 .653.124.92.373L9.653 4.44c.071.071.134.142.187.213h4.267a.836.836 0 0 1 .16-.213l2.853-2.747c.267-.249.573-.373.92-.373.347 0 .662.151.929.4.267.249.391.551.391.907 0 .356-.124.657-.373.906zM5.333 7.24c-.746.018-1.373.276-1.88.773-.506.498-.769 1.13-.786 1.894v7.52c.017.764.28 1.395.786 1.893.507.498 1.134.756 1.88.773h13.334c.746-.017 1.373-.275 1.88-.773.506-.498.769-1.129.786-1.893v-7.52c-.017-.765-.28-1.396-.786-1.894-.507-.497-1.134-.755-1.88-.773zM8 11.107c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c0-.373.129-.689.386-.947.258-.257.574-.386.947-.386zm8 0c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c.017-.391.15-.711.4-.96.249-.249.56-.373.933-.373z"/>&lt;/svg>
+&lt;/span>
+&lt;span class="flex flex-col min-w-0">
+&lt;span class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate">引擎演示视频 · Bilibili&lt;/span>
+&lt;span class="text-xs text-zinc-500 dark:text-zinc-400 truncate">Three.js 机械臂仿真引擎实时演示&lt;/span>
+&lt;/span>
+&lt;span class="ml-auto flex-shrink-0 text-xs font-medium px-2 py-0.5 rounded-full text-white" style="background:#00a1d6">
+Bilibili
+&lt;/span>
+&lt;svg class="flex-shrink-0 w-4 h-4 text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>&lt;/svg>
+&lt;/a>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/robotic-arm-sim/featured.png"
+alt="Three.js 实时机械臂可视化 — 调节滑动条旋转参数，模型相应变化。">&lt;figcaption>
+&lt;p>Three.js 实时机械臂可视化 — 调节滑动条旋转参数，模型相应变化。&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;hr>
+&lt;p>同济大学中德工业 4.0 实验室与西门子联合研究项目，用深度强化学习替代传统粒子群优化（PSO），实现更高精度的机械臂控制。&lt;/p>
+&lt;p>&lt;strong>技术工作：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>DQN 智能体&lt;/strong> 用于关节轨迹优化，替代 PSO 基线&lt;/li>
+&lt;li>&lt;strong>Three.js 3D 可视化&lt;/strong> — 滑动条交互式参数控制，实时模型更新，支持导入工业设备场景&lt;/li>
+&lt;li>&lt;strong>SITP 项目结项认证&lt;/strong> 已完成&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>关键洞察：&lt;/strong> 接触 NVIDIA Isaac Sim 后，识别到核心需求并非模型导入/可视化，而是自定义算法接口与 GPU 加速物理仿真 — 据此调整了研究方向。&lt;/p>
+&lt;p>&lt;strong>归属：&lt;/strong> 同济大学中德工业 4.0 实验室 × 西门子 | 2023.11 – 2024.02&lt;/p></description></item></channel></rss>

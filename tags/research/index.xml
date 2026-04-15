@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Research | Liu Yue — Embodied AI Researcher</title><link>https://miracle-techlink.github.io/vivid-aurora-space/tags/research/</link><atom:link href="https://miracle-techlink.github.io/vivid-aurora-space/tags/research/index.xml" rel="self" type="application/rss+xml"/><description>Research</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Apr 2026 00:00:00 +0000</lastBuildDate><image><url>https://miracle-techlink.github.io/vivid-aurora-space/media/icon_hu_982c5d63a71b2961.png</url><title>Research</title><link>https://miracle-techlink.github.io/vivid-aurora-space/tags/research/</link></image><item><title>GDN-Memory: Constant-Footprint Embodied Memory for World Models</title><link>https://miracle-techlink.github.io/vivid-aurora-space/projects/gdn-memory/</link><pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/projects/gdn-memory/</guid><description>&lt;a href="https://github.com/miracle-techlink" target="_blank" rel="noopener"
+class="group flex items-center gap-4 no-underline rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3 my-3 shadow-sm hover:shadow-md hover:border-zinc-300 dark:hover:border-zinc-500 transition-all duration-200">
+&lt;span class="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-lg text-white" style="background:#24292e">
+&lt;svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">&lt;path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>&lt;/svg>
+&lt;/span>
+&lt;span class="flex flex-col min-w-0">
+&lt;span class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate">miracle-techlink / GitHub&lt;/span>
+&lt;span class="text-xs text-zinc-500 dark:text-zinc-400 truncate">GDN-Memory 代码仓库（即将开源）&lt;/span>
+&lt;/span>
+&lt;span class="ml-auto flex-shrink-0 text-xs font-medium px-2 py-0.5 rounded-full text-white" style="background:#24292e">
+GitHub
+&lt;/span>
+&lt;svg class="flex-shrink-0 w-4 h-4 text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>&lt;/svg>
+&lt;/a>
+&lt;a href="https://www.bilibili.com/video/BV1kSA3zbEXQ/" target="_blank" rel="noopener"
+class="group flex items-center gap-4 no-underline rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3 my-3 shadow-sm hover:shadow-md hover:border-zinc-300 dark:hover:border-zinc-500 transition-all duration-200">
+&lt;span class="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-lg text-white" style="background:#00a1d6">
+&lt;svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">&lt;path d="M17.813 4.653h.854c1.51.054 2.769.578 3.773 1.574 1.004.995 1.524 2.249 1.56 3.76v7.36c-.036 1.51-.556 2.769-1.56 3.773s-2.262 1.524-3.773 1.56H5.333c-1.51-.036-2.769-.556-3.773-1.56S.036 18.858 0 17.347v-7.36c.036-1.511.556-2.765 1.56-3.76 1.004-.996 2.262-1.52 3.773-1.574h.774l-1.174-1.12a1.234 1.234 0 0 1-.373-.906c0-.356.124-.658.373-.907l.027-.027c.267-.249.573-.373.92-.373.347 0 .653.124.92.373L9.653 4.44c.071.071.134.142.187.213h4.267a.836.836 0 0 1 .16-.213l2.853-2.747c.267-.249.573-.373.92-.373.347 0 .662.151.929.4.267.249.391.551.391.907 0 .356-.124.657-.373.906zM5.333 7.24c-.746.018-1.373.276-1.88.773-.506.498-.769 1.13-.786 1.894v7.52c.017.764.28 1.395.786 1.893.507.498 1.134.756 1.88.773h13.334c.746-.017 1.373-.275 1.88-.773.506-.498.769-1.129.786-1.893v-7.52c-.017-.765-.28-1.396-.786-1.894-.507-.497-1.134-.755-1.88-.773zM8 11.107c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c0-.373.129-.689.386-.947.258-.257.574-.386.947-.386zm8 0c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c.017-.391.15-.711.4-.96.249-.249.56-.373.933-.373z"/>&lt;/svg>
+&lt;/span>
+&lt;span class="flex flex-col min-w-0">
+&lt;span class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate">GDN-Memory Demo · Bilibili&lt;/span>
+&lt;span class="text-xs text-zinc-500 dark:text-zinc-400 truncate">具身记忆系统演示视频&lt;/span>
+&lt;/span>
+&lt;span class="ml-auto flex-shrink-0 text-xs font-medium px-2 py-0.5 rounded-full text-white" style="background:#00a1d6">
+Bilibili
+&lt;/span>
+&lt;svg class="flex-shrink-0 w-4 h-4 text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>&lt;/svg>
+&lt;/a>
+&lt;p>A three-layer hierarchical memory system for embodied agents built on &lt;strong>Gated DeltaNet (GDN)&lt;/strong> fast-weight matrices, integrated into the Genie Envisioner Slow-Fast VLA architecture.&lt;/p>
+&lt;p>&lt;strong>Architecture:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Layer 1 (Physical)&lt;/strong> — TTT layer inside each of the 28 DiT blocks of GE-Base (2B), inserted after cross-attention, before FFN. Shared W ∈ ℝ^{64×64} updated at 5 Hz Slow Path.&lt;/li>
+&lt;li>&lt;strong>Layer 2–3 (Object / Behavioral)&lt;/strong> — External to Slow Path. CLIP/DINO detects objects from visual latents, writes W_obj and W_person via online GDN updates. Memory tokens injected into GE-Act (160M, 30 Hz) via cross-attention.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Key properties:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Constant 256 KB memory regardless of episode length&lt;/li>
+&lt;li>&amp;lt;1ms GDN update latency (SRAM fast-weight computation)&lt;/li>
+&lt;li>3D RoPE spatial encoding for object-position binding&lt;/li>
+&lt;li>Dual CUDA stream + Double Buffering scheduling&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Target:&lt;/strong> ICRA / CoRL 2026 | Affiliations: Tongji CS × PKU DLIB × 智元机器人&lt;/p>
+&lt;hr>
+&lt;h2 id="demo">Demo&lt;/h2>
+&lt;div class="w-full h-auto aspect-video relative">
+&lt;iframe src="//player.bilibili.com/player.html?bvid=BV1kSA3zbEXQ&amp;page=1&amp;autoplay=0"
+allow="accelerometer; clipboard-write; encrypted-media; gyroscope; fullscreen; picture-in-picture;"
+class="w-full h-full"
+>&lt;/iframe>
+&lt;/div>
+&lt;hr>
+&lt;h2 id="experiment-log">Experiment Log&lt;/h2>
+&lt;p>Staged validation: synthetic → real-scene → VLA integration → memory robustness → cold-start.&lt;/p>
+&lt;hr>
+&lt;h3 id="exp-a--gdn-object-memory-synthetic-validation---pass">Exp A — GDN Object Memory: Synthetic Validation   ✅ PASS&lt;/h3>
+&lt;p>
+&lt;/p>
+&lt;p>Validates the core GDN mechanism across 5 sub-experiments on synthetic data.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Hypothesis&lt;/th>
+&lt;th>Result&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>H1 Capacity&lt;/td>
+&lt;td>100% retrieval at N≤100; 99.2% at N=200 (4.5× safety margin)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>H2/H3 Online update&lt;/td>
+&lt;td>99.8% recovery after 1 re-observation; 0.0 pp interference on unmoved&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Hyperparameter robustness&lt;/td>
+&lt;td>All 25 (γ, η) combos → acc=1.000&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Momentum ablation&lt;/td>
+&lt;td>η_s≥0.8 harmful, must be disabled&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Key ablation&lt;/td>
+&lt;td>Random CLIP keys cost only 6.3 pp vs orthogonal&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="exp-b--geniesim-real-scene-validation---planned">Exp B — GenieSim Real-Scene Validation   🔜 Planned&lt;/h3>
+&lt;p>
+&lt;/p>
+&lt;p>Transfers GDN to GenieSim home_g2 (13 scene variants) using real CLIP ViT-L/14 features on a 智元 G2 robot.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Hypothesis&lt;/th>
+&lt;th>Target&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>H1&lt;/td>
+&lt;td>hit@1m ≥ 80% for N≤50 objects&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>H2&lt;/td>
+&lt;td>After 20% objects moved: recovery hit@1m ≥ 75%, unmoved degradation ≤5 pp&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>H3&lt;/td>
+&lt;td>≥10/13 scenes individually pass H1 + H2&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="exp-c--gdn--ge-act-integration---planned">Exp C — GDN + GE-Act Integration   🔜 Planned&lt;/h3>
+&lt;p>
+&lt;/p>
+&lt;p>Injects GDN memory tokens into GE-Act&amp;rsquo;s Action DiT via &lt;code>attn3_hidden_states&lt;/code>. Only a ~524K projection layer is trained (backbone frozen). Benchmarked on CALVIN, LIBERO, and ICRA26 World Model Track.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Hypothesis&lt;/th>
+&lt;th>Target&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>H_C1/C2&lt;/td>
+&lt;td>Reproduce GE-Act baseline (CALVIN Avg ≥ 4.0), ≤5 pp degradation on standard tasks&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>H_C3&lt;/td>
+&lt;td>nDTW: 0.388 → ≥0.538 (+15 pp) on ICRA26 competition data&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>H_C4&lt;/td>
+&lt;td>GDN achieves ≥90% of KV-Cache upper bound at 256 KB&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="exp-d--system-2-surprise-routing---planned">Exp D — System 2 Surprise Routing   🔜 Planned&lt;/h3>
+&lt;p>
+&lt;/p>
+&lt;p>Tests a System 2 explicit event buffer (K=100 slots, 100 KB) using GDN update magnitude as a zero-cost surprise signal — protecting memory when 50% of objects are simultaneously displaced (System 1 alone degrades 20–30 pp).&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Hypothesis&lt;/th>
+&lt;th>Target&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>H_D1&lt;/td>
+&lt;td>System 1+2 retains unmoved memory ≥ System 1 alone +15 pp&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>H_D2&lt;/td>
+&lt;td>Buffer exact recall hit@1m ≥ 95%&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>H_D3&lt;/td>
+&lt;td>Surprise decreases monotonically, ≤30% of initial after 5 reps (consolidation)&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="exp-e--system-3-persistent-prior---planned">Exp E — System 3 Persistent Prior   🔜 Planned&lt;/h3>
+&lt;p>
+&lt;/p>
+&lt;p>Tests learnable prior tokens P ∈ ℝ^{32×256} (32 KB, frozen at deployment) to cut cold-start exploration from ~400 steps to ~180 steps.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Strategy&lt;/th>
+&lt;th>Expected gain&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>A: CLIP text embeddings of 32 common objects (zero training)&lt;/td>
+&lt;td>−40% steps-to-80%-hit&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>B: MAML meta-learning over multi-scene episodes&lt;/td>
+&lt;td>−57% steps-to-80%-hit&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>H_E2&lt;/td>
+&lt;td>Prior steady-state gap ≤3 pp at 500 steps (no long-term interference)&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>GDN-Memory: Constant-Footprint Embodied Memory for World Models</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/gdn-memory/</link><pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/gdn-memory/</guid><description>&lt;a href="https://github.com/miracle-techlink" target="_blank" rel="noopener"
+class="group flex items-center gap-4 no-underline rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3 my-3 shadow-sm hover:shadow-md hover:border-zinc-300 dark:hover:border-zinc-500 transition-all duration-200">
+&lt;span class="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-lg text-white" style="background:#24292e">
+&lt;svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">&lt;path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>&lt;/svg>
+&lt;/span>
+&lt;span class="flex flex-col min-w-0">
+&lt;span class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate">miracle-techlink / GitHub&lt;/span>
+&lt;span class="text-xs text-zinc-500 dark:text-zinc-400 truncate">GDN-Memory 代码仓库（即将开源）&lt;/span>
+&lt;/span>
+&lt;span class="ml-auto flex-shrink-0 text-xs font-medium px-2 py-0.5 rounded-full text-white" style="background:#24292e">
+GitHub
+&lt;/span>
+&lt;svg class="flex-shrink-0 w-4 h-4 text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>&lt;/svg>
+&lt;/a>
+&lt;a href="https://www.bilibili.com/video/BV1kSA3zbEXQ/" target="_blank" rel="noopener"
+class="group flex items-center gap-4 no-underline rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3 my-3 shadow-sm hover:shadow-md hover:border-zinc-300 dark:hover:border-zinc-500 transition-all duration-200">
+&lt;span class="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-lg text-white" style="background:#00a1d6">
+&lt;svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">&lt;path d="M17.813 4.653h.854c1.51.054 2.769.578 3.773 1.574 1.004.995 1.524 2.249 1.56 3.76v7.36c-.036 1.51-.556 2.769-1.56 3.773s-2.262 1.524-3.773 1.56H5.333c-1.51-.036-2.769-.556-3.773-1.56S.036 18.858 0 17.347v-7.36c.036-1.511.556-2.765 1.56-3.76 1.004-.996 2.262-1.52 3.773-1.574h.774l-1.174-1.12a1.234 1.234 0 0 1-.373-.906c0-.356.124-.658.373-.907l.027-.027c.267-.249.573-.373.92-.373.347 0 .653.124.92.373L9.653 4.44c.071.071.134.142.187.213h4.267a.836.836 0 0 1 .16-.213l2.853-2.747c.267-.249.573-.373.92-.373.347 0 .662.151.929.4.267.249.391.551.391.907 0 .356-.124.657-.373.906zM5.333 7.24c-.746.018-1.373.276-1.88.773-.506.498-.769 1.13-.786 1.894v7.52c.017.764.28 1.395.786 1.893.507.498 1.134.756 1.88.773h13.334c.746-.017 1.373-.275 1.88-.773.506-.498.769-1.129.786-1.893v-7.52c-.017-.765-.28-1.396-.786-1.894-.507-.497-1.134-.755-1.88-.773zM8 11.107c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c0-.373.129-.689.386-.947.258-.257.574-.386.947-.386zm8 0c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c.017-.391.15-.711.4-.96.249-.249.56-.373.933-.373z"/>&lt;/svg>
+&lt;/span>
+&lt;span class="flex flex-col min-w-0">
+&lt;span class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate">GDN-Memory Demo · Bilibili&lt;/span>
+&lt;span class="text-xs text-zinc-500 dark:text-zinc-400 truncate">具身记忆系统演示视频&lt;/span>
+&lt;/span>
+&lt;span class="ml-auto flex-shrink-0 text-xs font-medium px-2 py-0.5 rounded-full text-white" style="background:#00a1d6">
+Bilibili
+&lt;/span>
+&lt;svg class="flex-shrink-0 w-4 h-4 text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>&lt;/svg>
+&lt;/a>
+&lt;p>基于 &lt;strong>Gated DeltaNet（GDN）&lt;/strong> 快权重矩阵构建的具身智能体三层分层记忆系统，集成于 Genie Envisioner Slow-Fast VLA 架构。&lt;/p>
+&lt;p>&lt;strong>架构设计：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>第一层（物理层）&lt;/strong> — TTT 层嵌入 GE-Base（2B）的 28 个 DiT 块中，插于交叉注意力之后、FFN 之前。共享权重矩阵 W ∈ ℝ^{64×64}，以 5 Hz 慢路径更新。&lt;/li>
+&lt;li>&lt;strong>第二/三层（物体层/行为层）&lt;/strong> — 位于慢路径外部。CLIP/DINO 从视觉潜变量检测物体，通过在线 GDN 更新写入 W_obj 和 W_person。记忆 token 经交叉注意力注入 GE-Act（160M，30 Hz）。&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>核心特性：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>无论片段长度，记忆占用恒定 256 KB&lt;/li>
+&lt;li>GDN 更新延迟 &amp;lt;1ms（SRAM 快权重计算）&lt;/li>
+&lt;li>3D RoPE 空间编码用于物体-位置绑定&lt;/li>
+&lt;li>双 CUDA 流 + 双缓冲调度&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>目标投稿：&lt;/strong> ICRA / CoRL 2026 | 归属：同济 CS × PKU DLIB × 智元机器人&lt;/p>
+&lt;hr>
+&lt;h2 id="演示视频">演示视频&lt;/h2>
+&lt;div class="w-full h-auto aspect-video relative">
+&lt;iframe src="//player.bilibili.com/player.html?bvid=BV1kSA3zbEXQ&amp;page=1&amp;autoplay=0"
+allow="accelerometer; clipboard-write; encrypted-media; gyroscope; fullscreen; picture-in-picture;"
+class="w-full h-full"
+>&lt;/iframe>
+&lt;/div>
+&lt;hr>
+&lt;h2 id="实验记录">实验记录&lt;/h2>
+&lt;p>分阶段验证：合成数据 → 真实场景 → VLA 集成 → 记忆鲁棒性 → 冷启动。&lt;/p>
+&lt;hr>
+&lt;h3 id="实验-a--gdn-物体记忆合成数据验证---通过">实验 A — GDN 物体记忆：合成数据验证   ✅ 通过&lt;/h3>
+&lt;p>
+&lt;/p>
+&lt;p>在合成数据上通过 5 个子实验验证 GDN 核心机制。&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>假设&lt;/th>
+&lt;th>结果&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>H1 容量&lt;/td>
+&lt;td>N≤100 时检索率 100%；N=200 时 99.2%（4.5× 安全裕度）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>H2/H3 在线更新&lt;/td>
+&lt;td>1 次再观测后恢复率 99.8%；未移动物体干扰 0.0 pp&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>超参数鲁棒性&lt;/td>
+&lt;td>全部 25 组（γ, η）组合 → acc=1.000&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>动量消融&lt;/td>
+&lt;td>η_s≥0.8 有害，必须禁用&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>键值消融&lt;/td>
+&lt;td>随机 CLIP 键仅比正交键差 6.3 pp&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="实验-b--geniesim-真实场景验证---计划中">实验 B — GenieSim 真实场景验证   🔜 计划中&lt;/h3>
+&lt;p>
+&lt;/p>
+&lt;p>将 GDN 迁移至 GenieSim home_g2（13 种场景变体），在智元 G2 机器人上使用真实 CLIP ViT-L/14 特征。&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>假设&lt;/th>
+&lt;th>目标&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>H1&lt;/td>
+&lt;td>N≤50 个物体时 hit@1m ≥ 80%&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>H2&lt;/td>
+&lt;td>20% 物体移动后：恢复 hit@1m ≥ 75%，未移动物体退化 ≤5 pp&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>H3&lt;/td>
+&lt;td>≥10/13 场景单独通过 H1 + H2&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="实验-c--gdn--ge-act-集成---计划中">实验 C — GDN + GE-Act 集成   🔜 计划中&lt;/h3>
+&lt;p>
+&lt;/p>
+&lt;p>通过 &lt;code>attn3_hidden_states&lt;/code> 将 GDN 记忆 token 注入 GE-Act 的 Action DiT。仅训练约 524K 的投影层（主干冻结），在 CALVIN、LIBERO 和 ICRA26 世界模型赛道上进行基准测试。&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>假设&lt;/th>
+&lt;th>目标&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>H_C1/C2&lt;/td>
+&lt;td>复现 GE-Act 基线（CALVIN Avg ≥ 4.0），标准任务退化 ≤5 pp&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>H_C3&lt;/td>
+&lt;td>nDTW: 0.388 → ≥0.538（+15 pp），在 ICRA26 竞赛数据上&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>H_C4&lt;/td>
+&lt;td>256 KB 下 GDN 达到 KV-Cache 上界的 ≥90%&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="实验-d--system-2-惊奇路由---计划中">实验 D — System 2 惊奇路由   🔜 计划中&lt;/h3>
+&lt;p>
+&lt;/p>
+&lt;p>测试 System 2 显式事件缓冲区（K=100 槽，100 KB），以 GDN 更新幅度作为零成本惊奇信号 — 当 50% 物体同时移位时（System 1 单独退化 20–30 pp）保护记忆。&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>假设&lt;/th>
+&lt;th>目标&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>H_D1&lt;/td>
+&lt;td>System 1+2 未移动记忆保留 ≥ System 1 单独 +15 pp&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>H_D2&lt;/td>
+&lt;td>缓冲区精确召回 hit@1m ≥ 95%&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>H_D3&lt;/td>
+&lt;td>惊奇值单调递减，5 次重复后 ≤初始值 30%（巩固效应）&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="实验-e--system-3-持久先验---计划中">实验 E — System 3 持久先验   🔜 计划中&lt;/h3>
+&lt;p>
+&lt;/p>
+&lt;p>测试可学习先验 token P ∈ ℝ^{32×256}（32 KB，部署时冻结），将冷启动探索步数从约 400 步缩短至约 180 步。&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>策略&lt;/th>
+&lt;th>预期收益&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>A：32 个常见物体的 CLIP 文本嵌入（无需训练）&lt;/td>
+&lt;td>−40% steps-to-80%-hit&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>B：MAML 元学习跨场景片段&lt;/td>
+&lt;td>−57% steps-to-80%-hit&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>H_E2&lt;/td>
+&lt;td>先验稳态差距在 500 步时 ≤3 pp（无长期干扰）&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>Endovascular Surgical Robot Platform (stEVE)</title><link>https://miracle-techlink.github.io/vivid-aurora-space/projects/vascular-robot/</link><pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/projects/vascular-robot/</guid><description>&lt;a href="https://github.com/miracle-techlink" target="_blank" rel="noopener"
+class="group flex items-center gap-4 no-underline rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3 my-3 shadow-sm hover:shadow-md hover:border-zinc-300 dark:hover:border-zinc-500 transition-all duration-200">
+&lt;span class="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-lg text-white" style="background:#24292e">
+&lt;svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">&lt;path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>&lt;/svg>
+&lt;/span>
+&lt;span class="flex flex-col min-w-0">
+&lt;span class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate">miracle-techlink / GitHub&lt;/span>
+&lt;span class="text-xs text-zinc-500 dark:text-zinc-400 truncate">stEVE 平台代码仓库&lt;/span>
+&lt;/span>
+&lt;span class="ml-auto flex-shrink-0 text-xs font-medium px-2 py-0.5 rounded-full text-white" style="background:#24292e">
+GitHub
+&lt;/span>
+&lt;svg class="flex-shrink-0 w-4 h-4 text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>&lt;/svg>
+&lt;/a>
+&lt;a href="https://miracle-techlink.github.io/posts/20040508.html" target="_blank" rel="noopener"
+class="group flex items-center gap-4 no-underline rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3 my-3 shadow-sm hover:shadow-md hover:border-zinc-300 dark:hover:border-zinc-500 transition-all duration-200">
+&lt;span class="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-lg text-white" style="background:#6b7280">
+&lt;svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5">&lt;path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/>&lt;path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/>&lt;/svg>
+&lt;/span>
+&lt;span class="flex flex-col min-w-0">
+&lt;span class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate">Blog: VLA 如何落地医疗机器人&lt;/span>
+&lt;span class="text-xs text-zinc-500 dark:text-zinc-400 truncate">miracle-techlink.github.io · 综述文章&lt;/span>
+&lt;/span>
+&lt;span class="ml-auto flex-shrink-0 text-xs font-medium px-2 py-0.5 rounded-full text-white" style="background:#6b7280">
+Link
+&lt;/span>
+&lt;svg class="flex-shrink-0 w-4 h-4 text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>&lt;/svg>
+&lt;/a>
+&lt;p>A complete research platform for AI-assisted endovascular intervention, spanning preoperative 3D planning through intraoperative RL-guided navigation.&lt;/p>
+&lt;p>&lt;strong>Pipeline:&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>CTA → STL&lt;/strong> — TotalSegmentator vessel segmentation, VMTK centerline extraction&lt;/li>
+&lt;li>&lt;strong>SOFA FEM Simulation&lt;/strong> — Cosserat beam guidewire model, realistic vascular deformation&lt;/li>
+&lt;li>&lt;strong>RL Navigation&lt;/strong> — SAC/PPO agents with geodesic distance reward + safety constraints&lt;/li>
+&lt;li>&lt;strong>Biplane DSA&lt;/strong> — DLT triangulation + Beer-Lambert X-ray projection for 2D-3D registration&lt;/li>
+&lt;li>&lt;strong>Intraoperative Correction&lt;/strong> — SE(3) IRC-RL with real DSA feedback&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>Ongoing research:&lt;/strong> Training a diffusion-based trajectory planner on large-scale SOFA-generated synthetic data, transferring to real vascular geometries — targeting to overcome clinical data scarcity.&lt;/p>
+&lt;p>&lt;strong>Affiliations:&lt;/strong> Tongji University × PKU DLIB | 2026&lt;/p>
+&lt;hr>
+&lt;h3 id="system-architecture">System Architecture&lt;/h3>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/vascular-robot/eve_architecture.png"
+alt="stEVE simulation pipeline: vessel tree, instrument, SOFA engine, and fluoroscopy rendering.">&lt;figcaption>
+&lt;p>stEVE simulation pipeline: vessel tree, instrument, SOFA engine, and fluoroscopy rendering.&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;h3 id="clinical-navigation-demo">Clinical Navigation Demo&lt;/h3>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/vascular-robot/demo_clinical.png"
+alt="Catheter navigation in patient-specific vascular anatomy — final frame of a clinical test episode.">&lt;figcaption>
+&lt;p>Catheter navigation in patient-specific vascular anatomy — final frame of a clinical test episode.&lt;/p>
+&lt;/figcaption>
+&lt;/figure></description></item><item><title>血管介入手术机器人平台（stEVE）</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/vascular-robot/</link><pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/vascular-robot/</guid><description>&lt;a href="https://github.com/miracle-techlink" target="_blank" rel="noopener"
+class="group flex items-center gap-4 no-underline rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3 my-3 shadow-sm hover:shadow-md hover:border-zinc-300 dark:hover:border-zinc-500 transition-all duration-200">
+&lt;span class="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-lg text-white" style="background:#24292e">
+&lt;svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">&lt;path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>&lt;/svg>
+&lt;/span>
+&lt;span class="flex flex-col min-w-0">
+&lt;span class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate">miracle-techlink / GitHub&lt;/span>
+&lt;span class="text-xs text-zinc-500 dark:text-zinc-400 truncate">stEVE 平台代码仓库&lt;/span>
+&lt;/span>
+&lt;span class="ml-auto flex-shrink-0 text-xs font-medium px-2 py-0.5 rounded-full text-white" style="background:#24292e">
+GitHub
+&lt;/span>
+&lt;svg class="flex-shrink-0 w-4 h-4 text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>&lt;/svg>
+&lt;/a>
+&lt;a href="https://miracle-techlink.github.io/posts/20040508.html" target="_blank" rel="noopener"
+class="group flex items-center gap-4 no-underline rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3 my-3 shadow-sm hover:shadow-md hover:border-zinc-300 dark:hover:border-zinc-500 transition-all duration-200">
+&lt;span class="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-lg text-white" style="background:#6b7280">
+&lt;svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5">&lt;path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/>&lt;path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/>&lt;/svg>
+&lt;/span>
+&lt;span class="flex flex-col min-w-0">
+&lt;span class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate">Blog: VLA 如何落地医疗机器人&lt;/span>
+&lt;span class="text-xs text-zinc-500 dark:text-zinc-400 truncate">miracle-techlink.github.io · 综述文章&lt;/span>
+&lt;/span>
+&lt;span class="ml-auto flex-shrink-0 text-xs font-medium px-2 py-0.5 rounded-full text-white" style="background:#6b7280">
+Link
+&lt;/span>
+&lt;svg class="flex-shrink-0 w-4 h-4 text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>&lt;/svg>
+&lt;/a>
+&lt;p>面向 AI 辅助血管腔内介入的完整研究平台，覆盖术前三维规划至术中 RL 引导导航全流程。&lt;/p>
+&lt;p>&lt;strong>处理流程：&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>CTA → STL&lt;/strong> — TotalSegmentator 血管分割，VMTK 中心线提取&lt;/li>
+&lt;li>&lt;strong>SOFA FEM 仿真&lt;/strong> — Cosserat 梁导丝模型，真实血管形变仿真&lt;/li>
+&lt;li>&lt;strong>RL 导航&lt;/strong> — SAC/PPO 智能体，测地距离奖励 + 安全约束&lt;/li>
+&lt;li>&lt;strong>双平面 DSA&lt;/strong> — DLT 三角测量 + Beer-Lambert X 射线投影，实现 2D-3D 配准&lt;/li>
+&lt;li>&lt;strong>术中校正&lt;/strong> — SE(3) IRC-RL，融合真实 DSA 反馈&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>进行中研究：&lt;/strong> 在大规模 SOFA 生成的合成数据上训练基于扩散模型的轨迹规划器，迁移至真实血管几何结构——目标是克服临床数据稀缺问题。&lt;/p>
+&lt;p>&lt;strong>归属：&lt;/strong> 同济大学 × 北大 DLIB | 2026&lt;/p>
+&lt;hr>
+&lt;h3 id="系统架构">系统架构&lt;/h3>
+&lt;figure>&lt;img src="eve_architecture.png"
+alt="stEVE 仿真流水线：血管树、介入器械、SOFA 引擎与荧光透视渲染。">&lt;figcaption>
+&lt;p>stEVE 仿真流水线：血管树、介入器械、SOFA 引擎与荧光透视渲染。&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;h3 id="临床导航演示">临床导航演示&lt;/h3>
+&lt;figure>&lt;img src="demo_clinical.png"
+alt="患者特异性血管解剖结构中的导管导航——临床测试片段最终帧。">&lt;figcaption>
+&lt;p>患者特异性血管解剖结构中的导管导航——临床测试片段最终帧。&lt;/p>
+&lt;/figcaption>
+&lt;/figure></description></item></channel></rss>

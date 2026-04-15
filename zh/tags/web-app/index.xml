@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Web App | 刘越 — 具身智能研究员</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/tags/web-app/</link><atom:link href="https://miracle-techlink.github.io/vivid-aurora-space/zh/tags/web-app/index.xml" rel="self" type="application/rss+xml"/><description>Web App</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>zh-Hans</language><lastBuildDate>Sun, 01 Feb 2026 00:00:00 +0000</lastBuildDate><image><url>https://miracle-techlink.github.io/vivid-aurora-space/media/icon_hu_982c5d63a71b2961.png</url><title>Web App</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/tags/web-app/</link></image><item><title>MacroHard Maker — 连续碳纤维 3D 打印路径规划</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/cf-path-planner/</link><pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/cf-path-planner/</guid><description>&lt;p>&lt;strong>MacroHard Maker&lt;/strong> 是面向多轴连续碳纤维（CCF）FFF 打印机的全栈刀路规划系统，将纤维铺放方向与主应力方向对齐，实现最优结构性能。&lt;/p>
+&lt;a href="https://github.com/miracle-techlink/macrohard-maker-core" target="_blank" rel="noopener"
+class="group flex items-center gap-4 no-underline rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3 my-3 shadow-sm hover:shadow-md hover:border-zinc-300 dark:hover:border-zinc-500 transition-all duration-200">
+&lt;span class="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-lg text-white" style="background:#24292e">
+&lt;svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">&lt;path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>&lt;/svg>
+&lt;/span>
+&lt;span class="flex flex-col min-w-0">
+&lt;span class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate">macrohard-maker-core&lt;/span>
+&lt;span class="text-xs text-zinc-500 dark:text-zinc-400 truncate">Python 后端核心：FastAPI &amp;#43; FEA &amp;#43; 路径规划 &amp;#43; G-code 生成&lt;/span>
+&lt;/span>
+&lt;span class="ml-auto flex-shrink-0 text-xs font-medium px-2 py-0.5 rounded-full text-white" style="background:#24292e">
+GitHub
+&lt;/span>
+&lt;svg class="flex-shrink-0 w-4 h-4 text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>&lt;/svg>
+&lt;/a>
+&lt;a href="https://github.com/miracle-techlink/macrohard-maker-desktop" target="_blank" rel="noopener"
+class="group flex items-center gap-4 no-underline rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3 my-3 shadow-sm hover:shadow-md hover:border-zinc-300 dark:hover:border-zinc-500 transition-all duration-200">
+&lt;span class="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-lg text-white" style="background:#24292e">
+&lt;svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">&lt;path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>&lt;/svg>
+&lt;/span>
+&lt;span class="flex flex-col min-w-0">
+&lt;span class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate">macrohard-maker-desktop&lt;/span>
+&lt;span class="text-xs text-zinc-500 dark:text-zinc-400 truncate">连续碳纤维 3D 打印路径规划桌面软件&lt;/span>
+&lt;/span>
+&lt;span class="ml-auto flex-shrink-0 text-xs font-medium px-2 py-0.5 rounded-full text-white" style="background:#24292e">
+GitHub
+&lt;/span>
+&lt;svg class="flex-shrink-0 w-4 h-4 text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>&lt;/svg>
+&lt;/a>
+&lt;hr>
+&lt;p>&lt;strong>算法流水线：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>FEA&lt;/strong>（scikit-fem）— 线弹性应力分析，主应力方向提取&lt;/li>
+&lt;li>&lt;strong>SIMP 拓扑优化&lt;/strong> — 打印方向枚举，最小化悬挑面积&lt;/li>
+&lt;li>&lt;strong>测地路径规划&lt;/strong> — 任意曲面上的应力对齐表面路由&lt;/li>
+&lt;li>&lt;strong>XYA 运动规划&lt;/strong> — 螺旋缠绕 + 填充层 G-code 生成（速度提升 16×）&lt;/li>
+&lt;li>&lt;strong>Three.js 可视化&lt;/strong> — 浏览器内实时逐层预览&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>技术栈：&lt;/strong> Python · FastAPI · scikit-fem · Next.js 15 · Three.js · TypeScript · Tailwind&lt;/p></description></item></channel></rss>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mechanical Design | Liu Yue — Embodied AI Researcher</title><link>https://miracle-techlink.github.io/vivid-aurora-space/tags/mechanical-design/</link><atom:link href="https://miracle-techlink.github.io/vivid-aurora-space/tags/mechanical-design/index.xml" rel="self" type="application/rss+xml"/><description>Mechanical Design</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jun 2023 00:00:00 +0000</lastBuildDate><image><url>https://miracle-techlink.github.io/vivid-aurora-space/media/icon_hu_982c5d63a71b2961.png</url><title>Mechanical Design</title><link>https://miracle-techlink.github.io/vivid-aurora-space/tags/mechanical-design/</link></image><item><title>Smart Car Design — Provincial Competition Silver Award (Team Lead)</title><link>https://miracle-techlink.github.io/vivid-aurora-space/projects/smart-car/</link><pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/projects/smart-car/</guid><description>&lt;p>Led a team in designing and manufacturing a cam-steered autonomous smart car for the provincial-level competition, taking the project from concept through mechanical design, simulation, and hardware implementation.&lt;/p>
+&lt;p>&lt;strong>Role:&lt;/strong> Team Lead — responsible for overall mechanical architecture, steering system design, trajectory modeling, and circuit design.&lt;/p>
+&lt;hr>
+&lt;h3 id="mechanical-design">Mechanical Design&lt;/h3>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/smart-car/cad_v1.png"
+alt="Early-stage CAD concept model — initial chassis layout and wheel configuration.">&lt;figcaption>
+&lt;p>Early-stage CAD concept model — initial chassis layout and wheel configuration.&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/smart-car/featured.png"
+alt="Final SolidWorks detailed render — cam steering mechanism, gear transmission, drive wheels, and onboard camera mount.">&lt;figcaption>
+&lt;p>Final SolidWorks detailed render — cam steering mechanism, gear transmission, drive wheels, and onboard camera mount.&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>The steering system uses a &lt;strong>cam-based mechanism&lt;/strong> to convert rotational motion into precise lateral displacement, eliminating the need for servo actuators and improving mechanical reliability. The drivetrain uses a gear reduction stage paired with brushed DC motors.&lt;/p>
+&lt;hr>
+&lt;h3 id="trajectory-simulation">Trajectory Simulation&lt;/h3>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/smart-car/simulation.jpeg"
+alt="MATLAB trajectory simulation — left: full path trace (x/y in mm); top-right: vehicle turning angle vs. displacement; bottom-right: cam curve profile.">&lt;figcaption>
+&lt;p>MATLAB trajectory simulation — left: full path trace (x/y in mm); top-right: vehicle turning angle vs. displacement; bottom-right: cam curve profile.&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>Developed a MATLAB model to simulate the vehicle trajectory based on the cam profile. Key outputs:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Path trace&lt;/strong> — verifies the car follows the intended curved route&lt;/li>
+&lt;li>&lt;strong>Turning angle curve&lt;/strong> — validates smooth, continuous steering input&lt;/li>
+&lt;li>&lt;strong>Cam profile&lt;/strong> — designed for minimal acceleration jerk and stable contact force&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="charging-circuit">Charging Circuit&lt;/h3>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/smart-car/circuit.png"
+alt="Custom charging circuit schematic — onboard battery management for the competition vehicle.">&lt;figcaption>
+&lt;p>Custom charging circuit schematic — onboard battery management for the competition vehicle.&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>Designed a custom charging circuit with battery management to ensure reliable power delivery during competition runs.&lt;/p>
+&lt;hr>
+&lt;p>&lt;strong>Award:&lt;/strong> Silver Award, Provincial Smart Car Competition | Team Lead
+&lt;strong>Stack:&lt;/strong> SolidWorks · MATLAB · PCB Design · DC Motor Control&lt;/p></description></item><item><title>智能小车设计 — 省赛银奖（队长）</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/smart-car/</link><pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/smart-car/</guid><description>&lt;p>担任队长，带队设计并制造一辆凸轮转向自主智能小车，参加省级竞赛。项目覆盖机械设计、轨迹仿真到硬件实现的全流程。&lt;/p>
+&lt;p>&lt;strong>职责：&lt;/strong> 队长 — 负责整体机械架构、转向系统设计、轨迹建模与电路设计。&lt;/p>
+&lt;hr>
+&lt;h3 id="机械设计">机械设计&lt;/h3>
+&lt;figure>&lt;img src="cad_v1.png"
+alt="初版 CAD 概念模型 — 底盘布局与车轮配置初稿。">&lt;figcaption>
+&lt;p>初版 CAD 概念模型 — 底盘布局与车轮配置初稿。&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>&lt;img src="featured.png"
+alt="SolidWorks 最终详细渲染 — 凸轮转向机构、减速齿轮、驱动车轮与摄像头支架。">&lt;figcaption>
+&lt;p>SolidWorks 最终详细渲染 — 凸轮转向机构、减速齿轮、驱动车轮与摄像头支架。&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>转向系统采用&lt;strong>凸轮机构&lt;/strong>，将旋转运动转化为精确的横向位移，无需舵机，提升机械可靠性。传动部分采用减速齿轮级配合有刷直流电机。&lt;/p>
+&lt;hr>
+&lt;h3 id="轨迹仿真">轨迹仿真&lt;/h3>
+&lt;figure>&lt;img src="simulation.jpeg"
+alt="MATLAB 轨迹仿真 — 左：完整路径轨迹（单位 mm）；右上：车辆转角随位移变化；右下：凸轮曲线轮廓。">&lt;figcaption>
+&lt;p>MATLAB 轨迹仿真 — 左：完整路径轨迹（单位 mm）；右上：车辆转角随位移变化；右下：凸轮曲线轮廓。&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>基于凸轮轮廓建立 MATLAB 仿真模型，验证车辆行驶轨迹。核心输出：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>路径轨迹&lt;/strong> — 验证小车沿预定曲线行驶&lt;/li>
+&lt;li>&lt;strong>转角曲线&lt;/strong> — 确保转向输入平滑连续&lt;/li>
+&lt;li>&lt;strong>凸轮轮廓&lt;/strong> — 设计目标：最小加速度冲击、稳定接触力&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="充电电路">充电电路&lt;/h3>
+&lt;figure>&lt;img src="circuit.png"
+alt="自制充电电路原理图 — 含电池管理，保障比赛期间稳定供电。">&lt;figcaption>
+&lt;p>自制充电电路原理图 — 含电池管理，保障比赛期间稳定供电。&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;hr>
+&lt;p>&lt;strong>奖项：&lt;/strong> 省级智能小车竞赛银奖 | 队长
+&lt;strong>技术栈：&lt;/strong> SolidWorks · MATLAB · PCB 设计 · 直流电机控制&lt;/p></description></item></channel></rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>扩散模型 | Liu Yue — Embodied AI Researcher</title>
+    <link>http://localhost:1313/tags/%E6%89%A9%E6%95%A3%E6%A8%A1%E5%9E%8B/</link>
+      <atom:link href="http://localhost:1313/tags/%E6%89%A9%E6%95%A3%E6%A8%A1%E5%9E%8B/index.xml" rel="self" type="application/rss+xml" />
+    <description>扩散模型</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu_982c5d63a71b2961.png</url>
+      <title>扩散模型</title>
+      <link>http://localhost:1313/tags/%E6%89%A9%E6%95%A3%E6%A8%A1%E5%9E%8B/</link>
+    </image>
+    
+    <item>
+      <title>合成数据驱动的扩散模型用于血管介入引导</title>
+      <link>http://localhost:1313/zh/publications/vascular-diffusion/</link>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/publications/vascular-diffusion/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

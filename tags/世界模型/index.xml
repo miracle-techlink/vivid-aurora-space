@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>世界模型 | Liu Yue — Embodied AI Researcher</title>
+    <link>http://localhost:1313/tags/%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B/</link>
+      <atom:link href="http://localhost:1313/tags/%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B/index.xml" rel="self" type="application/rss+xml" />
+    <description>世界模型</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu_982c5d63a71b2961.png</url>
+      <title>世界模型</title>
+      <link>http://localhost:1313/tags/%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B/</link>
+    </image>
+    
+    <item>
+      <title>GDN-Memory：具身世界模型的常量占用关联记忆</title>
+      <link>http://localhost:1313/zh/publications/tempo-vla/</link>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/publications/tempo-vla/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Open Source | 刘越 — 具身智能研究员</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/tags/open-source/</link><atom:link href="https://miracle-techlink.github.io/vivid-aurora-space/zh/tags/open-source/index.xml" rel="self" type="application/rss+xml"/><description>Open Source</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>zh-Hans</language><lastBuildDate>Sat, 01 Nov 2025 00:00:00 +0000</lastBuildDate><image><url>https://miracle-techlink.github.io/vivid-aurora-space/media/icon_hu_982c5d63a71b2961.png</url><title>Open Source</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/tags/open-source/</link></image><item><title>OpenDuckMini — 开源双足机器人</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/openduck-mini/</link><pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/openduck-mini/</guid><description>&lt;p>&lt;strong>OpenDuckMini&lt;/strong> 是与
+联合开发的开源微型双足机器人平台，子豪兄是国内最具影响力的 AI 科普创作者之一。&lt;/p>
+&lt;p>&lt;strong>硬件配置：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>3D 打印结构件（PLA/PETG）&lt;/li>
+&lt;li>各关节舵机驱动&lt;/li>
+&lt;li>树莓派板载计算&lt;/li>
+&lt;li>自制 PCB 线束&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>运动能力：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>动态双足行走与奔跑步态&lt;/li>
+&lt;li>已在大学跑道实地测试&lt;/li>
+&lt;li>开源硬件设计，社区可完整复现&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>社区生态：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>完整组装文档发布于飞书 Wiki&lt;/li>
+&lt;li>隶属与子豪兄在同济大学联合创立的机器人工作室&lt;/li>
+&lt;/ul>
+&lt;p>本项目体现了一个核心理念：&lt;strong>具身 AI 硬件民主化&lt;/strong> — 让任何人都能构建并实验足式机器人，加速从研究到产品的转化周期。&lt;/p>
+&lt;p>演示视频详见
+或项目文档。&lt;/p></description></item><item><title>LeRobot 与具身 AI 黑客松项目</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/lerobot-embodied/</link><pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/lerobot-embodied/</guid><description>&lt;a href="https://zihao-ai.feishu.cn/wiki/TS6swApHbinx01kHDi5cf5n5n8c" target="_blank" rel="noopener"
+class="group flex items-center gap-4 no-underline rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3 my-3 shadow-sm hover:shadow-md hover:border-zinc-300 dark:hover:border-zinc-500 transition-all duration-200">
+&lt;span class="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-lg text-white" style="background:#1456f0">
+&lt;svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">&lt;path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 2c4.418 0 8 3.582 8 8s-3.582 8-8 8-8-3.582-8-8 3.582-8 8-8zm-1 3v6l5-3-5-3z"/>&lt;/svg>
+&lt;/span>
+&lt;span class="flex flex-col min-w-0">
+&lt;span class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate">LeRobot 中文社区文档&lt;/span>
+&lt;span class="text-xs text-zinc-500 dark:text-zinc-400 truncate">架构解析 · 训练流程 · 真机部署 · HuggingFace 官方收录&lt;/span>
+&lt;/span>
+&lt;span class="ml-auto flex-shrink-0 text-xs font-medium px-2 py-0.5 rounded-full text-white" style="background:#1456f0">
+Feishu Docs
+&lt;/span>
+&lt;svg class="flex-shrink-0 w-4 h-4 text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>&lt;/svg>
+&lt;/a>
+&lt;hr>
+&lt;h2 id="lerobot--学习与部署">LeRobot — 学习与部署&lt;/h2>
+&lt;p>深入研究 &lt;strong>Hugging Face LeRobot&lt;/strong> — 当前领先的开源具身智能框架 — 涵盖架构解析、训练流程复现与真机部署。&lt;/p>
+&lt;p>&lt;strong>学习范围：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>ACT（Action Chunking with Transformers）策略架构&lt;/li>
+&lt;li>Diffusion Policy 训练与推理流水线&lt;/li>
+&lt;li>TDMPC 基于世界模型的控制&lt;/li>
+&lt;li>SO-100 / Koch v1.1 硬件真机部署&lt;/li>
+&lt;/ul>
+&lt;blockquote class="border-l-4 border-neutral-300 dark:border-neutral-600 pl-4 italic text-neutral-600 dark:text-neutral-400 my-6">
+&lt;p>📖 联合撰写系统性中文社区文档，&lt;strong>已被 Hugging Face 官方收录&lt;/strong>。&lt;/p>
+&lt;/blockquote>
+&lt;a href="https://zihao-ai.feishu.cn/wiki/TS6swApHbinx01kHDi5cf5n5n8c" target="_blank" rel="noopener"
+class="group flex items-center gap-4 no-underline rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3 my-3 shadow-sm hover:shadow-md hover:border-zinc-300 dark:hover:border-zinc-500 transition-all duration-200">
+&lt;span class="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-lg text-white" style="background:#1456f0">
+&lt;svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">&lt;path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 2c4.418 0 8 3.582 8 8s-3.582 8-8 8-8-3.582-8-8 3.582-8 8-8zm-1 3v6l5-3-5-3z"/>&lt;/svg>
+&lt;/span>
+&lt;span class="flex flex-col min-w-0">
+&lt;span class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate">LeRobot 中文社区文档&lt;/span>
+&lt;span class="text-xs text-zinc-500 dark:text-zinc-400 truncate">架构解析 · 训练流程 · 真机部署 · HuggingFace 官方收录&lt;/span>
+&lt;/span>
+&lt;span class="ml-auto flex-shrink-0 text-xs font-medium px-2 py-0.5 rounded-full text-white" style="background:#1456f0">
+Feishu Docs
+&lt;/span>
+&lt;svg class="flex-shrink-0 w-4 h-4 text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>&lt;/svg>
+&lt;/a>
+&lt;p>&lt;strong>与研究的关联：&lt;/strong>
+LeRobot 的流匹配策略主干直接启发了 GDN-Memory 集成方案 — 理解推理流水线是设计亚毫秒级记忆更新调度的前提。&lt;/p>
+&lt;hr>
+&lt;h2 id="trime--home-care-robot-platform">tri.me — Home-Care Robot Platform&lt;/h2>
+&lt;p>&lt;strong>🏆 3rd Place — 小红书巅峰赛 Hackathon&lt;/strong>&lt;/p>
+&lt;a href="http://xhslink.com/o/4WJlspLKrXM" target="_blank" rel="noopener"
+class="group flex items-center gap-4 no-underline rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3 my-3 shadow-sm hover:shadow-md hover:border-zinc-300 dark:hover:border-zinc-500 transition-all duration-200">
+&lt;span class="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-lg text-white" style="background:#ff2442">
+&lt;svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">&lt;path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/>&lt;/svg>
+&lt;/span>
+&lt;span class="flex flex-col min-w-0">
+&lt;span class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate">tri.me 家庭护理机器人 Demo&lt;/span>
+&lt;span class="text-xs text-zinc-500 dark:text-zinc-400 truncate">Tri.me吹了吗家庭护理机器人 · 小红书巅峰赛三等奖&lt;/span>
+&lt;/span>
+&lt;span class="ml-auto flex-shrink-0 text-xs font-medium px-2 py-0.5 rounded-full text-white" style="background:#ff2442">
+小红书
+&lt;/span>
+&lt;svg class="flex-shrink-0 w-4 h-4 text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>&lt;/svg>
+&lt;/a>
+&lt;a href="https://github.com/persuer0/treame" target="_blank" rel="noopener"
+class="group flex items-center gap-4 no-underline rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3 my-3 shadow-sm hover:shadow-md hover:border-zinc-300 dark:hover:border-zinc-500 transition-all duration-200">
+&lt;span class="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-lg text-white" style="background:#24292e">
+&lt;svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">&lt;path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>&lt;/svg>
+&lt;/span>
+&lt;span class="flex flex-col min-w-0">
+&lt;span class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate">persuer0/treame&lt;/span>
+&lt;span class="text-xs text-zinc-500 dark:text-zinc-400 truncate">松灵 Nero 七自由度机械臂 · 刷牙 / 吹头发 / 剃胡子&lt;/span>
+&lt;/span>
+&lt;span class="ml-auto flex-shrink-0 text-xs font-medium px-2 py-0.5 rounded-full text-white" style="background:#24292e">
+GitHub
+&lt;/span>
+&lt;svg class="flex-shrink-0 w-4 h-4 text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>&lt;/svg>
+&lt;/a>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/lerobot-embodied/trime_scenes.png"
+alt="三类护理场景：刷牙 × 吹头发 × 剃胡子">&lt;figcaption>
+&lt;p>三类护理场景：刷牙 × 吹头发 × 剃胡子&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>场景&lt;/th>
+&lt;th>技术要点&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>🦷 刷牙&lt;/td>
+&lt;td>牙刷轨迹规划 × 力控清洁&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>💨 吹头发&lt;/td>
+&lt;td>头部跟随 × 角度自适应&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>🪒 剃胡子&lt;/td>
+&lt;td>面部轮廓贴合 × 微米级精度&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/lerobot-embodied/trime_arch.png"
+alt="三层解耦系统架构：感知层 / 控制层 / 执行层">&lt;figcaption>
+&lt;p>三层解耦系统架构：感知层 / 控制层 / 执行层&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>&lt;strong>三层解耦架构：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>感知层&lt;/strong> — 人体骨骼/人脸关键点实时检测，摄像头硬件加速编解码&lt;/li>
+&lt;li>&lt;strong>控制层&lt;/strong> — 机械臂 SDK，支持关节空间、笛卡尔、直线、圆弧多种运动模式，内置 SE3 坐标变换&lt;/li>
+&lt;li>&lt;strong>执行层&lt;/strong> — SocketCAN 协议驱动松灵 Nero，实现真正&amp;quot;以人为中心&amp;quot;的护理闭环&lt;/li>
+&lt;/ul></description></item></channel></rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>碳纤维 | 刘越 — 具身智能研究员</title>
+    <link>http://localhost:1313/zh/tags/%E7%A2%B3%E7%BA%A4%E7%BB%B4/</link>
+      <atom:link href="http://localhost:1313/zh/tags/%E7%A2%B3%E7%BA%A4%E7%BB%B4/index.xml" rel="self" type="application/rss+xml" />
+    <description>碳纤维</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>zh-Hans</language><lastBuildDate>Sun, 01 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu_982c5d63a71b2961.png</url>
+      <title>碳纤维</title>
+      <link>http://localhost:1313/zh/tags/%E7%A2%B3%E7%BA%A4%E7%BB%B4/</link>
+    </image>
+    
+    <item>
+      <title>多轴高速连续碳纤维 3D 打印的应力驱动 G-Code 规划</title>
+      <link>http://localhost:1313/zh/publications/cf-3d-printing/</link>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/publications/cf-3d-printing/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

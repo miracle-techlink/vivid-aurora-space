@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>测试时训练 | Liu Yue — Embodied AI Researcher</title>
+    <link>http://localhost:1313/tags/%E6%B5%8B%E8%AF%95%E6%97%B6%E8%AE%AD%E7%BB%83/</link>
+      <atom:link href="http://localhost:1313/tags/%E6%B5%8B%E8%AF%95%E6%97%B6%E8%AE%AD%E7%BB%83/index.xml" rel="self" type="application/rss+xml" />
+    <description>测试时训练</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu_982c5d63a71b2961.png</url>
+      <title>测试时训练</title>
+      <link>http://localhost:1313/tags/%E6%B5%8B%E8%AF%95%E6%97%B6%E8%AE%AD%E7%BB%83/</link>
+    </image>
+    
+    <item>
+      <title>GDN-Memory：具身世界模型的常量占用关联记忆</title>
+      <link>http://localhost:1313/zh/publications/tempo-vla/</link>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/publications/tempo-vla/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

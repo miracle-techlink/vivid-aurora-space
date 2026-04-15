@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>刘越 — 具身智能研究员</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/</link><atom:link href="https://miracle-techlink.github.io/vivid-aurora-space/zh/index.xml" rel="self" type="application/rss+xml"/><description>刘越 — 具身智能研究员</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>zh-Hans</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate><image><url>https://miracle-techlink.github.io/vivid-aurora-space/media/icon_hu_982c5d63a71b2961.png</url><title>刘越 — 具身智能研究员</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/</link></image><item><title>GDN-Memory: Constant-Footprint Embodied Memory for World Models</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/gdn-memory/</link><pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/gdn-memory/</guid><description>&lt;a href="https://github.com/miracle-techlink" target="_blank" rel="noopener"
+class="group flex items-center gap-4 no-underline rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3 my-3 shadow-sm hover:shadow-md hover:border-zinc-300 dark:hover:border-zinc-500 transition-all duration-200">
+&lt;span class="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-lg text-white" style="background:#24292e">
+&lt;svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">&lt;path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>&lt;/svg>
+&lt;/span>
+&lt;span class="flex flex-col min-w-0">
+&lt;span class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate">miracle-techlink / GitHub&lt;/span>
+&lt;span class="text-xs text-zinc-500 dark:text-zinc-400 truncate">GDN-Memory 代码仓库（即将开源）&lt;/span>
+&lt;/span>
+&lt;span class="ml-auto flex-shrink-0 text-xs font-medium px-2 py-0.5 rounded-full text-white" style="background:#24292e">
+GitHub
+&lt;/span>
+&lt;svg class="flex-shrink-0 w-4 h-4 text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>&lt;/svg>
+&lt;/a>
+&lt;a href="https://www.bilibili.com/video/BV1kSA3zbEXQ/" target="_blank" rel="noopener"
+class="group flex items-center gap-4 no-underline rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3 my-3 shadow-sm hover:shadow-md hover:border-zinc-300 dark:hover:border-zinc-500 transition-all duration-200">
+&lt;span class="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-lg text-white" style="background:#00a1d6">
+&lt;svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">&lt;path d="M17.813 4.653h.854c1.51.054 2.769.578 3.773 1.574 1.004.995 1.524 2.249 1.56 3.76v7.36c-.036 1.51-.556 2.769-1.56 3.773s-2.262 1.524-3.773 1.56H5.333c-1.51-.036-2.769-.556-3.773-1.56S.036 18.858 0 17.347v-7.36c.036-1.511.556-2.765 1.56-3.76 1.004-.996 2.262-1.52 3.773-1.574h.774l-1.174-1.12a1.234 1.234 0 0 1-.373-.906c0-.356.124-.658.373-.907l.027-.027c.267-.249.573-.373.92-.373.347 0 .653.124.92.373L9.653 4.44c.071.071.134.142.187.213h4.267a.836.836 0 0 1 .16-.213l2.853-2.747c.267-.249.573-.373.92-.373.347 0 .662.151.929.4.267.249.391.551.391.907 0 .356-.124.657-.373.906zM5.333 7.24c-.746.018-1.373.276-1.88.773-.506.498-.769 1.13-.786 1.894v7.52c.017.764.28 1.395.786 1.893.507.498 1.134.756 1.88.773h13.334c.746-.017 1.373-.275 1.88-.773.506-.498.769-1.129.786-1.893v-7.52c-.017-.765-.28-1.396-.786-1.894-.507-.497-1.134-.755-1.88-.773zM8 11.107c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c0-.373.129-.689.386-.947.258-.257.574-.386.947-.386zm8 0c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c.017-.391.15-.711.4-.96.249-.249.56-.373.933-.373z"/>&lt;/svg>
+&lt;/span>
+&lt;span class="flex flex-col min-w-0">
+&lt;span class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate">GDN-Memory Demo · Bilibili&lt;/span>
+&lt;span class="text-xs text-zinc-500 dark:text-zinc-400 truncate">具身记忆系统演示视频&lt;/span>
+&lt;/span>
+&lt;span class="ml-auto flex-shrink-0 text-xs font-medium px-2 py-0.5 rounded-full text-white" style="background:#00a1d6">
+Bilibili
+&lt;/span>
+&lt;svg class="flex-shrink-0 w-4 h-4 text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>&lt;/svg>
+&lt;/a>
+&lt;p>基于 &lt;strong>Gated DeltaNet（GDN）&lt;/strong> 快权重矩阵构建的具身智能体三层分层记忆系统，集成于 Genie Envisioner Slow-Fast VLA 架构。&lt;/p>
+&lt;p>&lt;strong>架构设计：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>第一层（物理层）&lt;/strong> — TTT 层嵌入 GE-Base（2B）的 28 个 DiT 块中，插于交叉注意力之后、FFN 之前。共享权重矩阵 W ∈ ℝ^{64×64}，以 5 Hz 慢路径更新。&lt;/li>
+&lt;li>&lt;strong>第二/三层（物体层/行为层）&lt;/strong> — 位于慢路径外部。CLIP/DINO 从视觉潜变量检测物体，通过在线 GDN 更新写入 W_obj 和 W_person。记忆 token 经交叉注意力注入 GE-Act（160M，30 Hz）。&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>核心特性：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>无论片段长度，记忆占用恒定 256 KB&lt;/li>
+&lt;li>GDN 更新延迟 &amp;lt;1ms（SRAM 快权重计算）&lt;/li>
+&lt;li>3D RoPE 空间编码用于物体-位置绑定&lt;/li>
+&lt;li>双 CUDA 流 + 双缓冲调度&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>目标投稿：&lt;/strong> ICRA / CoRL 2026 | 归属：同济 CS × PKU DLIB × 智元机器人&lt;/p>
+&lt;hr>
+&lt;h2 id="演示视频">演示视频&lt;/h2>
+&lt;div class="w-full h-auto aspect-video relative">
+&lt;iframe src="//player.bilibili.com/player.html?bvid=BV1kSA3zbEXQ&amp;page=1&amp;autoplay=0"
+allow="accelerometer; clipboard-write; encrypted-media; gyroscope; fullscreen; picture-in-picture;"
+class="w-full h-full"
+>&lt;/iframe>
+&lt;/div>
+&lt;hr>
+&lt;h2 id="实验记录">实验记录&lt;/h2>
+&lt;p>分阶段验证：合成数据 → 真实场景 → VLA 集成 → 记忆鲁棒性 → 冷启动。&lt;/p>
+&lt;hr>
+&lt;h3 id="实验-a--gdn-物体记忆合成数据验证---通过">实验 A — GDN 物体记忆：合成数据验证   ✅ 通过&lt;/h3>
+&lt;p>
+&lt;/p>
+&lt;p>在合成数据上通过 5 个子实验验证 GDN 核心机制。&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>假设&lt;/th>
+&lt;th>结果&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>H1 容量&lt;/td>
+&lt;td>N≤100 时检索率 100%；N=200 时 99.2%（4.5× 安全裕度）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>H2/H3 在线更新&lt;/td>
+&lt;td>1 次再观测后恢复率 99.8%；未移动物体干扰 0.0 pp&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>超参数鲁棒性&lt;/td>
+&lt;td>全部 25 组（γ, η）组合 → acc=1.000&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>动量消融&lt;/td>
+&lt;td>η_s≥0.8 有害，必须禁用&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>键值消融&lt;/td>
+&lt;td>随机 CLIP 键仅比正交键差 6.3 pp&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="实验-b--geniesim-真实场景验证---计划中">实验 B — GenieSim 真实场景验证   🔜 计划中&lt;/h3>
+&lt;p>
+&lt;/p>
+&lt;p>将 GDN 迁移至 GenieSim home_g2（13 种场景变体），在智元 G2 机器人上使用真实 CLIP ViT-L/14 特征。&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>假设&lt;/th>
+&lt;th>目标&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>H1&lt;/td>
+&lt;td>N≤50 个物体时 hit@1m ≥ 80%&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>H2&lt;/td>
+&lt;td>20% 物体移动后：恢复 hit@1m ≥ 75%，未移动物体退化 ≤5 pp&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>H3&lt;/td>
+&lt;td>≥10/13 场景单独通过 H1 + H2&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="实验-c--gdn--ge-act-集成---计划中">实验 C — GDN + GE-Act 集成   🔜 计划中&lt;/h3>
+&lt;p>
+&lt;/p>
+&lt;p>通过 &lt;code>attn3_hidden_states&lt;/code> 将 GDN 记忆 token 注入 GE-Act 的 Action DiT。仅训练约 524K 的投影层（主干冻结），在 CALVIN、LIBERO 和 ICRA26 世界模型赛道上进行基准测试。&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>假设&lt;/th>
+&lt;th>目标&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>H_C1/C2&lt;/td>
+&lt;td>复现 GE-Act 基线（CALVIN Avg ≥ 4.0），标准任务退化 ≤5 pp&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>H_C3&lt;/td>
+&lt;td>nDTW: 0.388 → ≥0.538（+15 pp），在 ICRA26 竞赛数据上&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>H_C4&lt;/td>
+&lt;td>256 KB 下 GDN 达到 KV-Cache 上界的 ≥90%&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="实验-d--system-2-惊奇路由---计划中">实验 D — System 2 惊奇路由   🔜 计划中&lt;/h3>
+&lt;p>
+&lt;/p>
+&lt;p>测试 System 2 显式事件缓冲区（K=100 槽，100 KB），以 GDN 更新幅度作为零成本惊奇信号 — 当 50% 物体同时移位时（System 1 单独退化 20–30 pp）保护记忆。&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>假设&lt;/th>
+&lt;th>目标&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>H_D1&lt;/td>
+&lt;td>System 1+2 未移动记忆保留 ≥ System 1 单独 +15 pp&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>H_D2&lt;/td>
+&lt;td>缓冲区精确召回 hit@1m ≥ 95%&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>H_D3&lt;/td>
+&lt;td>惊奇值单调递减，5 次重复后 ≤初始值 30%（巩固效应）&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="实验-e--system-3-持久先验---计划中">实验 E — System 3 持久先验   🔜 计划中&lt;/h3>
+&lt;p>
+&lt;/p>
+&lt;p>测试可学习先验 token P ∈ ℝ^{32×256}（32 KB，部署时冻结），将冷启动探索步数从约 400 步缩短至约 180 步。&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>策略&lt;/th>
+&lt;th>预期收益&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>A：32 个常见物体的 CLIP 文本嵌入（无需训练）&lt;/td>
+&lt;td>−40% steps-to-80%-hit&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>B：MAML 元学习跨场景片段&lt;/td>
+&lt;td>−57% steps-to-80%-hit&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>H_E2&lt;/td>
+&lt;td>先验稳态差距在 500 步时 ≤3 pp（无长期干扰）&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>GDN-Memory：具身世界模型的恒定占用联想记忆系统</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/publications/tempo-vla/</link><pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/zh/publications/tempo-vla/</guid><description/></item><item><title>合成数据驱动的扩散模型用于血管腔内介入引导</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/publications/vascular-diffusion/</link><pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/zh/publications/vascular-diffusion/</guid><description/></item><item><title>血管介入手术机器人平台（stEVE）</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/vascular-robot/</link><pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/vascular-robot/</guid><description>&lt;a href="https://github.com/miracle-techlink" target="_blank" rel="noopener"
+class="group flex items-center gap-4 no-underline rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3 my-3 shadow-sm hover:shadow-md hover:border-zinc-300 dark:hover:border-zinc-500 transition-all duration-200">
+&lt;span class="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-lg text-white" style="background:#24292e">
+&lt;svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">&lt;path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>&lt;/svg>
+&lt;/span>
+&lt;span class="flex flex-col min-w-0">
+&lt;span class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate">miracle-techlink / GitHub&lt;/span>
+&lt;span class="text-xs text-zinc-500 dark:text-zinc-400 truncate">stEVE 平台代码仓库&lt;/span>
+&lt;/span>
+&lt;span class="ml-auto flex-shrink-0 text-xs font-medium px-2 py-0.5 rounded-full text-white" style="background:#24292e">
+GitHub
+&lt;/span>
+&lt;svg class="flex-shrink-0 w-4 h-4 text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>&lt;/svg>
+&lt;/a>
+&lt;a href="https://miracle-techlink.github.io/posts/20040508.html" target="_blank" rel="noopener"
+class="group flex items-center gap-4 no-underline rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3 my-3 shadow-sm hover:shadow-md hover:border-zinc-300 dark:hover:border-zinc-500 transition-all duration-200">
+&lt;span class="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-lg text-white" style="background:#6b7280">
+&lt;svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5">&lt;path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/>&lt;path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/>&lt;/svg>
+&lt;/span>
+&lt;span class="flex flex-col min-w-0">
+&lt;span class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate">Blog: VLA 如何落地医疗机器人&lt;/span>
+&lt;span class="text-xs text-zinc-500 dark:text-zinc-400 truncate">miracle-techlink.github.io · 综述文章&lt;/span>
+&lt;/span>
+&lt;span class="ml-auto flex-shrink-0 text-xs font-medium px-2 py-0.5 rounded-full text-white" style="background:#6b7280">
+Link
+&lt;/span>
+&lt;svg class="flex-shrink-0 w-4 h-4 text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>&lt;/svg>
+&lt;/a>
+&lt;p>面向 AI 辅助血管腔内介入的完整研究平台，覆盖术前三维规划至术中 RL 引导导航全流程。&lt;/p>
+&lt;p>&lt;strong>处理流程：&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>CTA → STL&lt;/strong> — TotalSegmentator 血管分割，VMTK 中心线提取&lt;/li>
+&lt;li>&lt;strong>SOFA FEM 仿真&lt;/strong> — Cosserat 梁导丝模型，真实血管形变仿真&lt;/li>
+&lt;li>&lt;strong>RL 导航&lt;/strong> — SAC/PPO 智能体，测地距离奖励 + 安全约束&lt;/li>
+&lt;li>&lt;strong>双平面 DSA&lt;/strong> — DLT 三角测量 + Beer-Lambert X 射线投影，实现 2D-3D 配准&lt;/li>
+&lt;li>&lt;strong>术中校正&lt;/strong> — SE(3) IRC-RL，融合真实 DSA 反馈&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>进行中研究：&lt;/strong> 在大规模 SOFA 生成的合成数据上训练基于扩散模型的轨迹规划器，迁移至真实血管几何结构——目标是克服临床数据稀缺问题。&lt;/p>
+&lt;p>&lt;strong>归属：&lt;/strong> 同济大学 × 北大 DLIB | 2026&lt;/p>
+&lt;hr>
+&lt;h3 id="系统架构">系统架构&lt;/h3>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/vascular-robot/eve_architecture.png"
+alt="stEVE 仿真流水线：血管树、介入器械、SOFA 引擎与荧光透视渲染。">&lt;figcaption>
+&lt;p>stEVE 仿真流水线：血管树、介入器械、SOFA 引擎与荧光透视渲染。&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;h3 id="临床导航演示">临床导航演示&lt;/h3>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/vascular-robot/demo_clinical.png"
+alt="患者特异性血管解剖结构中的导管导航——临床测试片段最终帧。">&lt;figcaption>
+&lt;p>患者特异性血管解剖结构中的导管导航——临床测试片段最终帧。&lt;/p>
+&lt;/figcaption>
+&lt;/figure></description></item><item><title>MacroHard Maker — 连续碳纤维 3D 打印路径规划</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/cf-path-planner/</link><pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/cf-path-planner/</guid><description>&lt;p>&lt;strong>MacroHard Maker&lt;/strong> 是面向多轴连续碳纤维（CCF）FFF 打印机的全栈刀路规划系统，将纤维铺放方向与主应力方向对齐，实现最优结构性能。&lt;/p>
+&lt;a href="https://github.com/miracle-techlink/macrohard-maker-core" target="_blank" rel="noopener"
+class="group flex items-center gap-4 no-underline rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3 my-3 shadow-sm hover:shadow-md hover:border-zinc-300 dark:hover:border-zinc-500 transition-all duration-200">
+&lt;span class="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-lg text-white" style="background:#24292e">
+&lt;svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">&lt;path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>&lt;/svg>
+&lt;/span>
+&lt;span class="flex flex-col min-w-0">
+&lt;span class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate">macrohard-maker-core&lt;/span>
+&lt;span class="text-xs text-zinc-500 dark:text-zinc-400 truncate">Python 后端核心：FastAPI &amp;#43; FEA &amp;#43; 路径规划 &amp;#43; G-code 生成&lt;/span>
+&lt;/span>
+&lt;span class="ml-auto flex-shrink-0 text-xs font-medium px-2 py-0.5 rounded-full text-white" style="background:#24292e">
+GitHub
+&lt;/span>
+&lt;svg class="flex-shrink-0 w-4 h-4 text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>&lt;/svg>
+&lt;/a>
+&lt;a href="https://github.com/miracle-techlink/macrohard-maker-desktop" target="_blank" rel="noopener"
+class="group flex items-center gap-4 no-underline rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3 my-3 shadow-sm hover:shadow-md hover:border-zinc-300 dark:hover:border-zinc-500 transition-all duration-200">
+&lt;span class="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-lg text-white" style="background:#24292e">
+&lt;svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">&lt;path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>&lt;/svg>
+&lt;/span>
+&lt;span class="flex flex-col min-w-0">
+&lt;span class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate">macrohard-maker-desktop&lt;/span>
+&lt;span class="text-xs text-zinc-500 dark:text-zinc-400 truncate">连续碳纤维 3D 打印路径规划桌面软件&lt;/span>
+&lt;/span>
+&lt;span class="ml-auto flex-shrink-0 text-xs font-medium px-2 py-0.5 rounded-full text-white" style="background:#24292e">
+GitHub
+&lt;/span>
+&lt;svg class="flex-shrink-0 w-4 h-4 text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>&lt;/svg>
+&lt;/a>
+&lt;hr>
+&lt;p>&lt;strong>算法流水线：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>FEA&lt;/strong>（scikit-fem）— 线弹性应力分析，主应力方向提取&lt;/li>
+&lt;li>&lt;strong>SIMP 拓扑优化&lt;/strong> — 打印方向枚举，最小化悬挑面积&lt;/li>
+&lt;li>&lt;strong>测地路径规划&lt;/strong> — 任意曲面上的应力对齐表面路由&lt;/li>
+&lt;li>&lt;strong>XYA 运动规划&lt;/strong> — 螺旋缠绕 + 填充层 G-code 生成（速度提升 16×）&lt;/li>
+&lt;li>&lt;strong>Three.js 可视化&lt;/strong> — 浏览器内实时逐层预览&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>技术栈：&lt;/strong> Python · FastAPI · scikit-fem · Next.js 15 · Three.js · TypeScript · Tailwind&lt;/p></description></item><item><title>面向多轴高速连续碳纤维 3D 打印的应力驱动 G-code 规划</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/publications/cf-3d-printing/</link><pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/zh/publications/cf-3d-printing/</guid><description/></item><item><title>面向可部署视觉-语言-动作策略的高效推理基础设施</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/publications/vla-infra/</link><pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/zh/publications/vla-infra/</guid><description/></item><item><title>OpenDuckMini — 开源双足机器人</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/openduck-mini/</link><pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/openduck-mini/</guid><description>&lt;p>&lt;strong>OpenDuckMini&lt;/strong> 是与
+联合开发的开源微型双足机器人平台，子豪兄是国内最具影响力的 AI 科普创作者之一。&lt;/p>
+&lt;p>&lt;strong>硬件配置：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>3D 打印结构件（PLA/PETG）&lt;/li>
+&lt;li>各关节舵机驱动&lt;/li>
+&lt;li>树莓派板载计算&lt;/li>
+&lt;li>自制 PCB 线束&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>运动能力：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>动态双足行走与奔跑步态&lt;/li>
+&lt;li>已在大学跑道实地测试&lt;/li>
+&lt;li>开源硬件设计，社区可完整复现&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>社区生态：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>完整组装文档发布于飞书 Wiki&lt;/li>
+&lt;li>隶属与子豪兄在同济大学联合创立的机器人工作室&lt;/li>
+&lt;/ul>
+&lt;p>本项目体现了一个核心理念：&lt;strong>具身 AI 硬件民主化&lt;/strong> — 让任何人都能构建并实验足式机器人，加速从研究到产品的转化周期。&lt;/p>
+&lt;p>演示视频详见
+或项目文档。&lt;/p></description></item><item><title>综述：VLA 如何落地医疗机器人</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/blog/vla-medical/</link><pubDate>Mon, 27 Oct 2025 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/zh/blog/vla-medical/</guid><description/></item><item><title>VLA 具身模型后训练综述</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/blog/vla-postrain/</link><pubDate>Mon, 13 Oct 2025 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/zh/blog/vla-postrain/</guid><description/></item><item><title>LeRobot 与具身 AI 黑客松项目</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/lerobot-embodied/</link><pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/lerobot-embodied/</guid><description>&lt;a href="https://zihao-ai.feishu.cn/wiki/TS6swApHbinx01kHDi5cf5n5n8c" target="_blank" rel="noopener"
+class="group flex items-center gap-4 no-underline rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3 my-3 shadow-sm hover:shadow-md hover:border-zinc-300 dark:hover:border-zinc-500 transition-all duration-200">
+&lt;span class="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-lg text-white" style="background:#1456f0">
+&lt;svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">&lt;path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 2c4.418 0 8 3.582 8 8s-3.582 8-8 8-8-3.582-8-8 3.582-8 8-8zm-1 3v6l5-3-5-3z"/>&lt;/svg>
+&lt;/span>
+&lt;span class="flex flex-col min-w-0">
+&lt;span class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate">LeRobot 中文社区文档&lt;/span>
+&lt;span class="text-xs text-zinc-500 dark:text-zinc-400 truncate">架构解析 · 训练流程 · 真机部署 · HuggingFace 官方收录&lt;/span>
+&lt;/span>
+&lt;span class="ml-auto flex-shrink-0 text-xs font-medium px-2 py-0.5 rounded-full text-white" style="background:#1456f0">
+Feishu Docs
+&lt;/span>
+&lt;svg class="flex-shrink-0 w-4 h-4 text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>&lt;/svg>
+&lt;/a>
+&lt;hr>
+&lt;h2 id="lerobot--学习与部署">LeRobot — 学习与部署&lt;/h2>
+&lt;p>深入研究 &lt;strong>Hugging Face LeRobot&lt;/strong> — 当前领先的开源具身智能框架 — 涵盖架构解析、训练流程复现与真机部署。&lt;/p>
+&lt;p>&lt;strong>学习范围：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>ACT（Action Chunking with Transformers）策略架构&lt;/li>
+&lt;li>Diffusion Policy 训练与推理流水线&lt;/li>
+&lt;li>TDMPC 基于世界模型的控制&lt;/li>
+&lt;li>SO-100 / Koch v1.1 硬件真机部署&lt;/li>
+&lt;/ul>
+&lt;blockquote class="border-l-4 border-neutral-300 dark:border-neutral-600 pl-4 italic text-neutral-600 dark:text-neutral-400 my-6">
+&lt;p>📖 联合撰写系统性中文社区文档，&lt;strong>已被 Hugging Face 官方收录&lt;/strong>。&lt;/p>
+&lt;/blockquote>
+&lt;a href="https://zihao-ai.feishu.cn/wiki/TS6swApHbinx01kHDi5cf5n5n8c" target="_blank" rel="noopener"
+class="group flex items-center gap-4 no-underline rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3 my-3 shadow-sm hover:shadow-md hover:border-zinc-300 dark:hover:border-zinc-500 transition-all duration-200">
+&lt;span class="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-lg text-white" style="background:#1456f0">
+&lt;svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">&lt;path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 2c4.418 0 8 3.582 8 8s-3.582 8-8 8-8-3.582-8-8 3.582-8 8-8zm-1 3v6l5-3-5-3z"/>&lt;/svg>
+&lt;/span>
+&lt;span class="flex flex-col min-w-0">
+&lt;span class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate">LeRobot 中文社区文档&lt;/span>
+&lt;span class="text-xs text-zinc-500 dark:text-zinc-400 truncate">架构解析 · 训练流程 · 真机部署 · HuggingFace 官方收录&lt;/span>
+&lt;/span>
+&lt;span class="ml-auto flex-shrink-0 text-xs font-medium px-2 py-0.5 rounded-full text-white" style="background:#1456f0">
+Feishu Docs
+&lt;/span>
+&lt;svg class="flex-shrink-0 w-4 h-4 text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>&lt;/svg>
+&lt;/a>
+&lt;p>&lt;strong>与研究的关联：&lt;/strong>
+LeRobot 的流匹配策略主干直接启发了 GDN-Memory 集成方案 — 理解推理流水线是设计亚毫秒级记忆更新调度的前提。&lt;/p>
+&lt;hr>
+&lt;h2 id="trime--home-care-robot-platform">tri.me — Home-Care Robot Platform&lt;/h2>
+&lt;p>&lt;strong>🏆 3rd Place — 小红书巅峰赛 Hackathon&lt;/strong>&lt;/p>
+&lt;a href="http://xhslink.com/o/4WJlspLKrXM" target="_blank" rel="noopener"
+class="group flex items-center gap-4 no-underline rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3 my-3 shadow-sm hover:shadow-md hover:border-zinc-300 dark:hover:border-zinc-500 transition-all duration-200">
+&lt;span class="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-lg text-white" style="background:#ff2442">
+&lt;svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">&lt;path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/>&lt;/svg>
+&lt;/span>
+&lt;span class="flex flex-col min-w-0">
+&lt;span class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate">tri.me 家庭护理机器人 Demo&lt;/span>
+&lt;span class="text-xs text-zinc-500 dark:text-zinc-400 truncate">Tri.me吹了吗家庭护理机器人 · 小红书巅峰赛三等奖&lt;/span>
+&lt;/span>
+&lt;span class="ml-auto flex-shrink-0 text-xs font-medium px-2 py-0.5 rounded-full text-white" style="background:#ff2442">
+小红书
+&lt;/span>
+&lt;svg class="flex-shrink-0 w-4 h-4 text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>&lt;/svg>
+&lt;/a>
+&lt;a href="https://github.com/persuer0/treame" target="_blank" rel="noopener"
+class="group flex items-center gap-4 no-underline rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3 my-3 shadow-sm hover:shadow-md hover:border-zinc-300 dark:hover:border-zinc-500 transition-all duration-200">
+&lt;span class="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-lg text-white" style="background:#24292e">
+&lt;svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">&lt;path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>&lt;/svg>
+&lt;/span>
+&lt;span class="flex flex-col min-w-0">
+&lt;span class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate">persuer0/treame&lt;/span>
+&lt;span class="text-xs text-zinc-500 dark:text-zinc-400 truncate">松灵 Nero 七自由度机械臂 · 刷牙 / 吹头发 / 剃胡子&lt;/span>
+&lt;/span>
+&lt;span class="ml-auto flex-shrink-0 text-xs font-medium px-2 py-0.5 rounded-full text-white" style="background:#24292e">
+GitHub
+&lt;/span>
+&lt;svg class="flex-shrink-0 w-4 h-4 text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>&lt;/svg>
+&lt;/a>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/lerobot-embodied/trime_scenes.png"
+alt="三类护理场景：刷牙 × 吹头发 × 剃胡子">&lt;figcaption>
+&lt;p>三类护理场景：刷牙 × 吹头发 × 剃胡子&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>场景&lt;/th>
+&lt;th>技术要点&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>🦷 刷牙&lt;/td>
+&lt;td>牙刷轨迹规划 × 力控清洁&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>💨 吹头发&lt;/td>
+&lt;td>头部跟随 × 角度自适应&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>🪒 剃胡子&lt;/td>
+&lt;td>面部轮廓贴合 × 微米级精度&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/lerobot-embodied/trime_arch.png"
+alt="三层解耦系统架构：感知层 / 控制层 / 执行层">&lt;figcaption>
+&lt;p>三层解耦系统架构：感知层 / 控制层 / 执行层&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>&lt;strong>三层解耦架构：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>感知层&lt;/strong> — 人体骨骼/人脸关键点实时检测，摄像头硬件加速编解码&lt;/li>
+&lt;li>&lt;strong>控制层&lt;/strong> — 机械臂 SDK，支持关节空间、笛卡尔、直线、圆弧多种运动模式，内置 SE3 坐标变换&lt;/li>
+&lt;li>&lt;strong>执行层&lt;/strong> — SocketCAN 协议驱动松灵 Nero，实现真正&amp;quot;以人为中心&amp;quot;的护理闭环&lt;/li>
+&lt;/ul></description></item><item><title>LLM 微调实战报告</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/blog/llm-finetune-report/</link><pubDate>Sat, 20 Sep 2025 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/zh/blog/llm-finetune-report/</guid><description/></item><item><title>LLM 微调实战：从 LoRA 到全参数</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/blog/llm-finetune-practice/</link><pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/zh/blog/llm-finetune-practice/</guid><description/></item><item><title>CFD 散热仿真：从建模到优化</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/blog/cfd-cooling/</link><pubDate>Sun, 10 Aug 2025 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/zh/blog/cfd-cooling/</guid><description/></item><item><title>医疗 AI 问诊平台</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/medical-ai/</link><pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/medical-ai/</guid><description>&lt;p>从 2024 年 10 月到 2025 年 8 月自研的端到端医疗 AI 平台，涵盖模型训练与产品部署全流程。&lt;/p>
+&lt;p>&lt;strong>第一部分 — 多模态医疗大模型：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>三阶段微调：医学对齐 → 指令微调与路由 → 领域专家路由&lt;/li>
+&lt;li>CT/MRI 图像与医学文本的跨注意力对齐&lt;/li>
+&lt;li>MoE 式路由：将任务分配至专项专家模块（放射科、临床文本等）&lt;/li>
+&lt;li>架构参考：EMNLP 2024 路由框架&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>第二部分 — 云端平台：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Coze 多智能体工作流，覆盖用药辅助与健康打卡&lt;/li>
+&lt;li>影像分析 + 报告 OCR 流水线&lt;/li>
+&lt;li>Web 前端：症状分析、药品推荐、健康知识库&lt;/li>
+&lt;li>已部署并获得真实医院反馈验证&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>反思：&lt;/strong> 较早识别出产品市场匹配问题 — 医生信任壁垒与 B2B 医疗变现路径不清晰，是医疗 AI 产品的核心挑战。&lt;/p>
+&lt;p>&lt;strong>技术栈：&lt;/strong> PyTorch · Transformers · Coze · Vue · 云端部署&lt;/p>
+&lt;hr>
+&lt;h3 id="模型训练架构">模型训练架构&lt;/h3>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/medical-ai/arch.png"
+alt="三阶段微调流程：医学对齐 → 指令微调与路由 → 领域专家路由（参考 EMNLP 2024）。">&lt;figcaption>
+&lt;p>三阶段微调流程：医学对齐 → 指令微调与路由 → 领域专家路由（参考 EMNLP 2024）。&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;hr>
+&lt;h3 id="coze-多智能体工作流">Coze 多智能体工作流&lt;/h3>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/medical-ai/coze.png"
+alt="Coze 多智能体工作流，覆盖用药辅助、健康打卡与领域路由。">&lt;figcaption>
+&lt;p>Coze 多智能体工作流，覆盖用药辅助、健康打卡与领域路由。&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;hr>
+&lt;h3 id="平台前端">平台前端&lt;/h3>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/medical-ai/featured.png"
+alt="智慧医疗AI平台 — 症状分析、药品推荐、影像报告 OCR，已部署并获得医院反馈验证。">&lt;figcaption>
+&lt;p>智慧医疗AI平台 — 症状分析、药品推荐、影像报告 OCR，已部署并获得医院反馈验证。&lt;/p>
+&lt;/figcaption>
+&lt;/figure></description></item><item><title>FlashAttention 原理与工程实现解析</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/blog/flashattention/</link><pubDate>Sun, 20 Jul 2025 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/zh/blog/flashattention/</guid><description/></item><item><title>DeepSpeed ZeRO 训练大模型实战</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/blog/deepspeed/</link><pubDate>Sat, 05 Jul 2025 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/zh/blog/deepspeed/</guid><description/></item><item><title>PyTorch DDP 分布式训练实战</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/blog/ddp-training/</link><pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/zh/blog/ddp-training/</guid><description/></item><item><title>奖项与竞赛</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/awards/</link><pubDate>Sun, 19 May 2024 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/zh/awards/</guid><description/></item><item><title>AGV 迎宾巡检机器人 — 同济大学落地部署</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/agv-reception/</link><pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/agv-reception/</guid><description>&lt;p>参与研发面向同济大学展厅与教学楼的智能 AGV 机器人平台，集&lt;strong>迎宾&lt;/strong>与&lt;strong>巡检&lt;/strong>两大角色于共用 AGV 底座，搭载模块化 AI 大脑架构。&lt;/p>
+&lt;p>&lt;strong>个人贡献：&lt;/strong> 主导&lt;strong>中东客户阿拉伯语语音模块本地化&lt;/strong>落地，包括阿拉伯语 ASR、TTS 及交互流程适配，支撑海外商业部署。&lt;/p>
+&lt;hr>
+&lt;h3 id="落地场景">落地场景&lt;/h3>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/agv-reception/featured.jpg"
+alt="左：迎宾机器人同济展厅内投放使用。右：巡检机器人同济教学楼投放使用。">&lt;figcaption>
+&lt;p>左：迎宾机器人同济展厅内投放使用。右：巡检机器人同济教学楼投放使用。&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;hr>
+&lt;h3 id="系统架构">系统架构&lt;/h3>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/agv-reception/arch.png"
+alt="双脑架构：AI大脑（数据分析/模型推理/人机交互）&amp;#43; AGV大脑（自主导航控制器）统一底盘平台。">&lt;figcaption>
+&lt;p>双脑架构：AI大脑（数据分析/模型推理/人机交互）+ AGV大脑（自主导航控制器）统一底盘平台。&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>机器人采用&lt;strong>双脑架构&lt;/strong>：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>AI 大脑&lt;/strong> — 负责数据分析、模型推理、人机交互（视觉、NLP、多模态）&lt;/li>
+&lt;li>&lt;strong>AGV 大脑&lt;/strong> — 自主导航控制器（SLAM、路径规划、电机控制）&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="硬件配置">硬件配置&lt;/h3>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/agv-reception/hardware.png"
+alt="硬件：T1 工业级激光雷达、SONY 4G i640 计算单元、60W×2 无刷驱动电机、24V/16Ah 电池组。">&lt;figcaption>
+&lt;p>硬件：T1 工业级激光雷达、SONY 4G i640 计算单元、60W×2 无刷驱动电机、24V/16Ah 电池组。&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>模块&lt;/th>
+&lt;th>参数&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>激光雷达&lt;/td>
+&lt;td>单线，180° 视角，测距精度 0.1°&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>计算单元&lt;/td>
+&lt;td>SONY 4G i640，Ubuntu 16.04&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>驱动&lt;/td>
+&lt;td>橡胶车轮，60W×2 无刷电机，最高速 0.5m/s&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>供电&lt;/td>
+&lt;td>18650 锂电，24V/16Ah，续航约 2h&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="感知能力">感知能力&lt;/h3>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/agv-reception/sensors.png"
+alt="人员监测（人脸/穿戴/姿态/行为识别）× 环境监测（温湿度/烟雾/火警）">&lt;figcaption>
+&lt;p>人员监测（人脸/穿戴/姿态/行为识别）× 环境监测（温湿度/烟雾/火警）&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>&lt;strong>人员监测：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>人脸识别与比对&lt;/li>
+&lt;li>穿戴识别（衣物、着装规范）&lt;/li>
+&lt;li>姿态检测（人体骨骼关键点）&lt;/li>
+&lt;li>行为识别（吸烟检测、摔倒预警）&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>环境监测：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>温湿度检测（区域温度 + 物体温度）&lt;/li>
+&lt;li>烟雾报警（有害气体 + 烟雾）&lt;/li>
+&lt;li>火警预警（融合温度、热图、烟雾多源）&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="人脸识别与边缘-ai">人脸识别与边缘 AI&lt;/h3>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/agv-reception/face.png"
+alt="人脸识别 &amp;#43; 红外测温实时上传，支持二次开发与定制化功能扩展。">&lt;figcaption>
+&lt;p>人脸识别 + 红外测温实时上传，支持二次开发与定制化功能扩展。&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;ul>
+&lt;li>人脸识别 + 红外测温数据实时上传后台&lt;/li>
+&lt;li>考勤数据大屏可视化&lt;/li>
+&lt;li>支持二次开发，可定制化功能模块（含中东客户阿拉伯语语音交互落地）&lt;/li>
+&lt;/ul></description></item><item><title>机械臂仿真引擎 — 同济×西门子工业 4.0 实验室</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/robotic-arm-sim/</link><pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/robotic-arm-sim/</guid><description>&lt;a href="https://www.bilibili.com/video/BV1FTnDzVEzA/" target="_blank" rel="noopener"
+class="group flex items-center gap-4 no-underline rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3 my-3 shadow-sm hover:shadow-md hover:border-zinc-300 dark:hover:border-zinc-500 transition-all duration-200">
+&lt;span class="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-lg text-white" style="background:#00a1d6">
+&lt;svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">&lt;path d="M17.813 4.653h.854c1.51.054 2.769.578 3.773 1.574 1.004.995 1.524 2.249 1.56 3.76v7.36c-.036 1.51-.556 2.769-1.56 3.773s-2.262 1.524-3.773 1.56H5.333c-1.51-.036-2.769-.556-3.773-1.56S.036 18.858 0 17.347v-7.36c.036-1.511.556-2.765 1.56-3.76 1.004-.996 2.262-1.52 3.773-1.574h.774l-1.174-1.12a1.234 1.234 0 0 1-.373-.906c0-.356.124-.658.373-.907l.027-.027c.267-.249.573-.373.92-.373.347 0 .653.124.92.373L9.653 4.44c.071.071.134.142.187.213h4.267a.836.836 0 0 1 .16-.213l2.853-2.747c.267-.249.573-.373.92-.373.347 0 .662.151.929.4.267.249.391.551.391.907 0 .356-.124.657-.373.906zM5.333 7.24c-.746.018-1.373.276-1.88.773-.506.498-.769 1.13-.786 1.894v7.52c.017.764.28 1.395.786 1.893.507.498 1.134.756 1.88.773h13.334c.746-.017 1.373-.275 1.88-.773.506-.498.769-1.129.786-1.893v-7.52c-.017-.765-.28-1.396-.786-1.894-.507-.497-1.134-.755-1.88-.773zM8 11.107c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c0-.373.129-.689.386-.947.258-.257.574-.386.947-.386zm8 0c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c.017-.391.15-.711.4-.96.249-.249.56-.373.933-.373z"/>&lt;/svg>
+&lt;/span>
+&lt;span class="flex flex-col min-w-0">
+&lt;span class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate">引擎演示视频 · Bilibili&lt;/span>
+&lt;span class="text-xs text-zinc-500 dark:text-zinc-400 truncate">Three.js 机械臂仿真引擎实时演示&lt;/span>
+&lt;/span>
+&lt;span class="ml-auto flex-shrink-0 text-xs font-medium px-2 py-0.5 rounded-full text-white" style="background:#00a1d6">
+Bilibili
+&lt;/span>
+&lt;svg class="flex-shrink-0 w-4 h-4 text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>&lt;/svg>
+&lt;/a>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/robotic-arm-sim/featured.png"
+alt="Three.js 实时机械臂可视化 — 调节滑动条旋转参数，模型相应变化。">&lt;figcaption>
+&lt;p>Three.js 实时机械臂可视化 — 调节滑动条旋转参数，模型相应变化。&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;hr>
+&lt;p>同济大学中德工业 4.0 实验室与西门子联合研究项目，用深度强化学习替代传统粒子群优化（PSO），实现更高精度的机械臂控制。&lt;/p>
+&lt;p>&lt;strong>技术工作：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>DQN 智能体&lt;/strong> 用于关节轨迹优化，替代 PSO 基线&lt;/li>
+&lt;li>&lt;strong>Three.js 3D 可视化&lt;/strong> — 滑动条交互式参数控制，实时模型更新，支持导入工业设备场景&lt;/li>
+&lt;li>&lt;strong>SITP 项目结项认证&lt;/strong> 已完成&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>关键洞察：&lt;/strong> 接触 NVIDIA Isaac Sim 后，识别到核心需求并非模型导入/可视化，而是自定义算法接口与 GPU 加速物理仿真 — 据此调整了研究方向。&lt;/p>
+&lt;p>&lt;strong>归属：&lt;/strong> 同济大学中德工业 4.0 实验室 × 西门子 | 2023.11 – 2024.02&lt;/p></description></item><item><title>工作经历</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/experience/</link><pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/zh/experience/</guid><description/></item><item><title>智能小车设计 — 省赛银奖（队长）</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/smart-car/</link><pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/smart-car/</guid><description>&lt;p>担任队长，带队设计并制造一辆凸轮转向自主智能小车，参加省级竞赛。项目覆盖机械设计、轨迹仿真到硬件实现的全流程。&lt;/p>
+&lt;p>&lt;strong>职责：&lt;/strong> 队长 — 负责整体机械架构、转向系统设计、轨迹建模与电路设计。&lt;/p>
+&lt;hr>
+&lt;h3 id="机械设计">机械设计&lt;/h3>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/smart-car/cad_v1.png"
+alt="初版 CAD 概念模型 — 底盘布局与车轮配置初稿。">&lt;figcaption>
+&lt;p>初版 CAD 概念模型 — 底盘布局与车轮配置初稿。&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/smart-car/featured.png"
+alt="SolidWorks 最终详细渲染 — 凸轮转向机构、减速齿轮、驱动车轮与摄像头支架。">&lt;figcaption>
+&lt;p>SolidWorks 最终详细渲染 — 凸轮转向机构、减速齿轮、驱动车轮与摄像头支架。&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>转向系统采用&lt;strong>凸轮机构&lt;/strong>，将旋转运动转化为精确的横向位移，无需舵机，提升机械可靠性。传动部分采用减速齿轮级配合有刷直流电机。&lt;/p>
+&lt;hr>
+&lt;h3 id="轨迹仿真">轨迹仿真&lt;/h3>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/smart-car/simulation.jpeg"
+alt="MATLAB 轨迹仿真 — 左：完整路径轨迹（单位 mm）；右上：车辆转角随位移变化；右下：凸轮曲线轮廓。">&lt;figcaption>
+&lt;p>MATLAB 轨迹仿真 — 左：完整路径轨迹（单位 mm）；右上：车辆转角随位移变化；右下：凸轮曲线轮廓。&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>基于凸轮轮廓建立 MATLAB 仿真模型，验证车辆行驶轨迹。核心输出：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>路径轨迹&lt;/strong> — 验证小车沿预定曲线行驶&lt;/li>
+&lt;li>&lt;strong>转角曲线&lt;/strong> — 确保转向输入平滑连续&lt;/li>
+&lt;li>&lt;strong>凸轮轮廓&lt;/strong> — 设计目标：最小加速度冲击、稳定接触力&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="充电电路">充电电路&lt;/h3>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/smart-car/circuit.png"
+alt="自制充电电路原理图 — 含电池管理，保障比赛期间稳定供电。">&lt;figcaption>
+&lt;p>自制充电电路原理图 — 含电池管理，保障比赛期间稳定供电。&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;hr>
+&lt;p>&lt;strong>奖项：&lt;/strong> 省级智能小车竞赛银奖 | 队长
+&lt;strong>技术栈：&lt;/strong> SolidWorks · MATLAB · PCB 设计 · 直流电机控制&lt;/p></description></item></channel></rss>

@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Robotics | Liu Yue — Embodied AI Researcher</title><link>https://miracle-techlink.github.io/vivid-aurora-space/tags/robotics/</link><atom:link href="https://miracle-techlink.github.io/vivid-aurora-space/tags/robotics/index.xml" rel="self" type="application/rss+xml"/><description>Robotics</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Nov 2025 00:00:00 +0000</lastBuildDate><image><url>https://miracle-techlink.github.io/vivid-aurora-space/media/icon_hu_982c5d63a71b2961.png</url><title>Robotics</title><link>https://miracle-techlink.github.io/vivid-aurora-space/tags/robotics/</link></image><item><title>Open-Source Robotics Collaboration with 子豪兄</title><link>https://miracle-techlink.github.io/vivid-aurora-space/projects/openduck-mini/</link><pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/projects/openduck-mini/</guid><description>&lt;p>A series of open-source robotics projects co-built with
+— Tongji University&amp;rsquo;s most prominent AI/robotics education creator — focused on making embodied AI hardware accessible to the community.&lt;/p>
+&lt;hr>
+&lt;h3 id="openduckmini--bipedal-duck-robot">OpenDuckMini — Bipedal Duck Robot&lt;/h3>
+&lt;video controls >
+&lt;source src="https://miracle-techlink.github.io/vivid-aurora-space/projects/openduck-mini/demo.mp4" type="video/mp4">
+&lt;/video>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/openduck-mini/2.jpg"
+alt="Hardware internals: 3D-printed PLA/PETG frame, servo actuators at each joint, Raspberry Pi onboard compute, custom PCB wiring harness.">&lt;figcaption>
+&lt;p>Hardware internals: 3D-printed PLA/PETG frame, servo actuators at each joint, Raspberry Pi onboard compute, custom PCB wiring harness.&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;ul>
+&lt;li>Dynamic walking and running gait — field-tested on Tongji University track&lt;/li>
+&lt;li>3D-printed structural components (PLA/PETG), servo-actuated joints, Raspberry Pi compute&lt;/li>
+&lt;/ul>
+&lt;a href="https://zihao-ai.feishu.cn/wiki/HM3WwVsyEiOs4wkfR4McvRaUn5d" target="_blank" rel="noopener"
+class="group flex items-center gap-4 no-underline rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3 my-3 shadow-sm hover:shadow-md hover:border-zinc-300 dark:hover:border-zinc-500 transition-all duration-200">
+&lt;span class="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-lg text-white" style="background:#1456f0">
+&lt;svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">&lt;path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 2c4.418 0 8 3.582 8 8s-3.582 8-8 8-8-3.582-8-8 3.582-8 8-8zm-1 3v6l5-3-5-3z"/>&lt;/svg>
+&lt;/span>
+&lt;span class="flex flex-col min-w-0">
+&lt;span class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate">OpenDuckMini 完整构建文档&lt;/span>
+&lt;span class="text-xs text-zinc-500 dark:text-zinc-400 truncate">硬件组装 · 标定流程 · 步态调试指南&lt;/span>
+&lt;/span>
+&lt;span class="ml-auto flex-shrink-0 text-xs font-medium px-2 py-0.5 rounded-full text-white" style="background:#1456f0">
+Feishu Docs
+&lt;/span>
+&lt;svg class="flex-shrink-0 w-4 h-4 text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>&lt;/svg>
+&lt;/a>
+&lt;a href="https://space.bilibili.com/1900783" target="_blank" rel="noopener"
+class="group flex items-center gap-4 no-underline rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3 my-3 shadow-sm hover:shadow-md hover:border-zinc-300 dark:hover:border-zinc-500 transition-all duration-200">
+&lt;span class="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-lg text-white" style="background:#00a1d6">
+&lt;svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">&lt;path d="M17.813 4.653h.854c1.51.054 2.769.578 3.773 1.574 1.004.995 1.524 2.249 1.56 3.76v7.36c-.036 1.51-.556 2.769-1.56 3.773s-2.262 1.524-3.773 1.56H5.333c-1.51-.036-2.769-.556-3.773-1.56S.036 18.858 0 17.347v-7.36c.036-1.511.556-2.765 1.56-3.76 1.004-.996 2.262-1.52 3.773-1.574h.774l-1.174-1.12a1.234 1.234 0 0 1-.373-.906c0-.356.124-.658.373-.907l.027-.027c.267-.249.573-.373.92-.373.347 0 .653.124.92.373L9.653 4.44c.071.071.134.142.187.213h4.267a.836.836 0 0 1 .16-.213l2.853-2.747c.267-.249.573-.373.92-.373.347 0 .662.151.929.4.267.249.391.551.391.907 0 .356-.124.657-.373.906zM5.333 7.24c-.746.018-1.373.276-1.88.773-.506.498-.769 1.13-.786 1.894v7.52c.017.764.28 1.395.786 1.893.507.498 1.134.756 1.88.773h13.334c.746-.017 1.373-.275 1.88-.773.506-.498.769-1.129.786-1.893v-7.52c-.017-.765-.28-1.396-.786-1.894-.507-.497-1.134-.755-1.88-.773zM8 11.107c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c0-.373.129-.689.386-.947.258-.257.574-.386.947-.386zm8 0c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c.017-.391.15-.711.4-.96.249-.249.56-.373.933-.373z"/>&lt;/svg>
+&lt;/span>
+&lt;span class="flex flex-col min-w-0">
+&lt;span class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate">子豪兄 Bilibili 主页&lt;/span>
+&lt;span class="text-xs text-zinc-500 dark:text-zinc-400 truncate">同济大学 AI/机器人教育创作者&lt;/span>
+&lt;/span>
+&lt;span class="ml-auto flex-shrink-0 text-xs font-medium px-2 py-0.5 rounded-full text-white" style="background:#00a1d6">
+Bilibili
+&lt;/span>
+&lt;svg class="flex-shrink-0 w-4 h-4 text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>&lt;/svg>
+&lt;/a>
+&lt;a href="https://github.com/miracle-techlink" target="_blank" rel="noopener"
+class="group flex items-center gap-4 no-underline rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3 my-3 shadow-sm hover:shadow-md hover:border-zinc-300 dark:hover:border-zinc-500 transition-all duration-200">
+&lt;span class="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-lg text-white" style="background:#24292e">
+&lt;svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">&lt;path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>&lt;/svg>
+&lt;/span>
+&lt;span class="flex flex-col min-w-0">
+&lt;span class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate">miracle-techlink / GitHub&lt;/span>
+&lt;span class="text-xs text-zinc-500 dark:text-zinc-400 truncate">开源机器人项目代码仓库&lt;/span>
+&lt;/span>
+&lt;span class="ml-auto flex-shrink-0 text-xs font-medium px-2 py-0.5 rounded-full text-white" style="background:#24292e">
+GitHub
+&lt;/span>
+&lt;svg class="flex-shrink-0 w-4 h-4 text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>&lt;/svg>
+&lt;/a>
+&lt;hr>
+&lt;h3 id="quadruped-platform">Quadruped Platform&lt;/h3>
+&lt;p>Four-legged robot platform for reinforcement learning locomotion experiments and sim-to-real transfer research, built alongside the bipedal work as part of the same hardware studio.&lt;/p>
+&lt;hr>
+&lt;h3 id="community--mission">Community &amp;amp; Mission&lt;/h3>
+&lt;p>All projects are fully open-source and documented — reproducible by anyone with access to a 3D printer and basic electronics. The goal is to &lt;strong>democratize embodied AI hardware&lt;/strong> and accelerate the research-to-product cycle for students and researchers across China.&lt;/p></description></item><item><title>OpenDuckMini — 开源双足机器人</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/openduck-mini/</link><pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/openduck-mini/</guid><description>&lt;p>&lt;strong>OpenDuckMini&lt;/strong> 是与
+联合开发的开源微型双足机器人平台，子豪兄是国内最具影响力的 AI 科普创作者之一。&lt;/p>
+&lt;p>&lt;strong>硬件配置：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>3D 打印结构件（PLA/PETG）&lt;/li>
+&lt;li>各关节舵机驱动&lt;/li>
+&lt;li>树莓派板载计算&lt;/li>
+&lt;li>自制 PCB 线束&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>运动能力：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>动态双足行走与奔跑步态&lt;/li>
+&lt;li>已在大学跑道实地测试&lt;/li>
+&lt;li>开源硬件设计，社区可完整复现&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>社区生态：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>完整组装文档发布于飞书 Wiki&lt;/li>
+&lt;li>隶属与子豪兄在同济大学联合创立的机器人工作室&lt;/li>
+&lt;/ul>
+&lt;p>本项目体现了一个核心理念：&lt;strong>具身 AI 硬件民主化&lt;/strong> — 让任何人都能构建并实验足式机器人，加速从研究到产品的转化周期。&lt;/p>
+&lt;p>演示视频详见
+或项目文档。&lt;/p></description></item><item><title>AGV Reception &amp; Inspection Robot — Tongji Deployment</title><link>https://miracle-techlink.github.io/vivid-aurora-space/projects/agv-reception/</link><pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/projects/agv-reception/</guid><description>&lt;p>Participated in the R&amp;amp;D of an intelligent AGV robot platform deployed across Tongji University&amp;rsquo;s exhibition hall and teaching buildings. The system integrates two robot roles — &lt;strong>reception (迎宾)&lt;/strong> and &lt;strong>inspection (巡检)&lt;/strong> — on a shared AGV chassis with a modular AI brain architecture.&lt;/p>
+&lt;p>&lt;strong>My contribution:&lt;/strong> Led the &lt;strong>voice module localization for Middle East clients&lt;/strong> — adapting the NLP pipeline for Arabic speech recognition, TTS, and interaction flows to support overseas commercial deployment.&lt;/p>
+&lt;hr>
+&lt;h3 id="deployment">Deployment&lt;/h3>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/agv-reception/featured.jpg"
+alt="Left: Reception robot in Tongji University Exhibition Hall. Right: Inspection robot in Tongji teaching building.">&lt;figcaption>
+&lt;p>Left: Reception robot in Tongji University Exhibition Hall. Right: Inspection robot in Tongji teaching building.&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;hr>
+&lt;h3 id="system-architecture">System Architecture&lt;/h3>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/agv-reception/arch.png"
+alt="Dual-brain architecture: AI大脑 (data analysis / model inference / HRI) &amp;#43; AGV大脑 (autonomous navigation controller) on a unified AGV platform.">&lt;figcaption>
+&lt;p>Dual-brain architecture: AI大脑 (data analysis / model inference / HRI) + AGV大脑 (autonomous navigation controller) on a unified AGV platform.&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>The robot uses a &lt;strong>dual-brain architecture&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>AI 大脑&lt;/strong> — handles 数据分析, 模型推理, 人机交互 (vision, NLP, multimodal interaction)&lt;/li>
+&lt;li>&lt;strong>AGV 大脑&lt;/strong> — autonomous navigation controller (SLAM, path planning, motor control)&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="hardware-specs">Hardware Specs&lt;/h3>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/agv-reception/hardware.png"
+alt="Hardware: T1 industrial LiDAR, SONY 4G i640 compute unit, 60W×2 brushless drive motors, 24V/16Ah battery pack.">&lt;figcaption>
+&lt;p>Hardware: T1 industrial LiDAR, SONY 4G i640 compute unit, 60W×2 brushless drive motors, 24V/16Ah battery pack.&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Module&lt;/th>
+&lt;th>Spec&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>LiDAR&lt;/td>
+&lt;td>单线激光雷达，180° FOV，测距精度 0.1°&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Compute&lt;/td>
+&lt;td>SONY 4G i640，Ubuntu 16.04&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Drive&lt;/td>
+&lt;td>橡胶车轮，60W×2 无刷电机，最高速 0.5m/s&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Battery&lt;/td>
+&lt;td>18650锂电，24V/16Ah，续航 2h&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="perception-capabilities">Perception Capabilities&lt;/h3>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/agv-reception/sensors.png"
+alt="人员监测（人脸/穿戴/姿态/行为识别）× 环境监测（温湿度/烟雾/火警）">&lt;figcaption>
+&lt;p>人员监测（人脸/穿戴/姿态/行为识别）× 环境监测（温湿度/烟雾/火警）&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>&lt;strong>人员监测：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>人脸识别与比对&lt;/li>
+&lt;li>穿戴识别（衣物、着装规范）&lt;/li>
+&lt;li>姿态检测（人体骨骼关键点）&lt;/li>
+&lt;li>行为识别（吸烟检测、摔倒预警）&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>环境监测：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>温湿度检测（区域/物体温度）&lt;/li>
+&lt;li>烟雾报警（有害气体 + 烟雾检测）&lt;/li>
+&lt;li>火警预警（融合温度、热图、烟雾多源判断）&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="face-recognition--edge-ai">Face Recognition &amp;amp; Edge AI&lt;/h3>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/agv-reception/face.png"
+alt="人脸识别 &amp;#43; 红外测温实时上传，支持二次开发与定制化功能扩展。">&lt;figcaption>
+&lt;p>人脸识别 + 红外测温实时上传，支持二次开发与定制化功能扩展。&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;ul>
+&lt;li>人脸识别 + 红外测温数据实时上传&lt;/li>
+&lt;li>考勤数据大屏可视化&lt;/li>
+&lt;li>支持二次开发，可为客户定制化功能模块（含中东客户阿拉伯语语音交互落地）&lt;/li>
+&lt;/ul></description></item><item><title>AGV 迎宾巡检机器人 — 同济大学落地部署</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/agv-reception/</link><pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/agv-reception/</guid><description>&lt;p>参与研发面向同济大学展厅与教学楼的智能 AGV 机器人平台，集&lt;strong>迎宾&lt;/strong>与&lt;strong>巡检&lt;/strong>两大角色于共用 AGV 底座，搭载模块化 AI 大脑架构。&lt;/p>
+&lt;p>&lt;strong>个人贡献：&lt;/strong> 主导&lt;strong>中东客户阿拉伯语语音模块本地化&lt;/strong>落地，包括阿拉伯语 ASR、TTS 及交互流程适配，支撑海外商业部署。&lt;/p>
+&lt;hr>
+&lt;h3 id="落地场景">落地场景&lt;/h3>
+&lt;figure>&lt;img src="featured.jpg"
+alt="左：迎宾机器人同济展厅内投放使用。右：巡检机器人同济教学楼投放使用。">&lt;figcaption>
+&lt;p>左：迎宾机器人同济展厅内投放使用。右：巡检机器人同济教学楼投放使用。&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;hr>
+&lt;h3 id="系统架构">系统架构&lt;/h3>
+&lt;figure>&lt;img src="arch.png"
+alt="双脑架构：AI大脑（数据分析/模型推理/人机交互）&amp;#43; AGV大脑（自主导航控制器）统一底盘平台。">&lt;figcaption>
+&lt;p>双脑架构：AI大脑（数据分析/模型推理/人机交互）+ AGV大脑（自主导航控制器）统一底盘平台。&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>机器人采用&lt;strong>双脑架构&lt;/strong>：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>AI 大脑&lt;/strong> — 负责数据分析、模型推理、人机交互（视觉、NLP、多模态）&lt;/li>
+&lt;li>&lt;strong>AGV 大脑&lt;/strong> — 自主导航控制器（SLAM、路径规划、电机控制）&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="硬件配置">硬件配置&lt;/h3>
+&lt;figure>&lt;img src="hardware.png"
+alt="硬件：T1 工业级激光雷达、SONY 4G i640 计算单元、60W×2 无刷驱动电机、24V/16Ah 电池组。">&lt;figcaption>
+&lt;p>硬件：T1 工业级激光雷达、SONY 4G i640 计算单元、60W×2 无刷驱动电机、24V/16Ah 电池组。&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>模块&lt;/th>
+&lt;th>参数&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>激光雷达&lt;/td>
+&lt;td>单线，180° 视角，测距精度 0.1°&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>计算单元&lt;/td>
+&lt;td>SONY 4G i640，Ubuntu 16.04&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>驱动&lt;/td>
+&lt;td>橡胶车轮，60W×2 无刷电机，最高速 0.5m/s&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>供电&lt;/td>
+&lt;td>18650 锂电，24V/16Ah，续航约 2h&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="感知能力">感知能力&lt;/h3>
+&lt;figure>&lt;img src="sensors.png"
+alt="人员监测（人脸/穿戴/姿态/行为识别）× 环境监测（温湿度/烟雾/火警）">&lt;figcaption>
+&lt;p>人员监测（人脸/穿戴/姿态/行为识别）× 环境监测（温湿度/烟雾/火警）&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>&lt;strong>人员监测：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>人脸识别与比对&lt;/li>
+&lt;li>穿戴识别（衣物、着装规范）&lt;/li>
+&lt;li>姿态检测（人体骨骼关键点）&lt;/li>
+&lt;li>行为识别（吸烟检测、摔倒预警）&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>环境监测：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>温湿度检测（区域温度 + 物体温度）&lt;/li>
+&lt;li>烟雾报警（有害气体 + 烟雾）&lt;/li>
+&lt;li>火警预警（融合温度、热图、烟雾多源）&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="人脸识别与边缘-ai">人脸识别与边缘 AI&lt;/h3>
+&lt;figure>&lt;img src="face.png"
+alt="人脸识别 &amp;#43; 红外测温实时上传，支持二次开发与定制化功能扩展。">&lt;figcaption>
+&lt;p>人脸识别 + 红外测温实时上传，支持二次开发与定制化功能扩展。&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;ul>
+&lt;li>人脸识别 + 红外测温数据实时上传后台&lt;/li>
+&lt;li>考勤数据大屏可视化&lt;/li>
+&lt;li>支持二次开发，可定制化功能模块（含中东客户阿拉伯语语音交互落地）&lt;/li>
+&lt;/ul></description></item><item><title>Robotic Arm Simulation Engine — Tongji × Siemens Industry 4.0 Lab</title><link>https://miracle-techlink.github.io/vivid-aurora-space/projects/robotic-arm-sim/</link><pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/projects/robotic-arm-sim/</guid><description>
+&lt;video controls >
+&lt;source src="https://miracle-techlink.github.io/vivid-aurora-space/projects/robotic-arm-sim/demo.mp4" type="video/mp4">
+&lt;/video>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/robotic-arm-sim/featured.png"
+alt="Three.js real-time robotic arm visualization — adjusting slider parameters updates the 3D model in real time.">&lt;figcaption>
+&lt;p>Three.js real-time robotic arm visualization — adjusting slider parameters updates the 3D model in real time.&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;hr>
+&lt;p>A joint research project between Tongji University&amp;rsquo;s Sino-German Industry 4.0 Lab and Siemens, replacing legacy particle swarm optimization (PSO) with deep reinforcement learning for higher-precision robotic arm control.&lt;/p>
+&lt;p>&lt;strong>Technical work:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>DQN agent&lt;/strong> for joint trajectory optimization, replacing PSO baseline&lt;/li>
+&lt;li>&lt;strong>Three.js 3D visualization&lt;/strong> — interactive slider-based parameter control, real-time model updates, importable industrial equipment scenes&lt;/li>
+&lt;li>&lt;strong>SITP project certification&lt;/strong> completed&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Key insight:&lt;/strong> After exposure to NVIDIA Isaac Sim, identified that the core need is not model import/visualization but custom algorithm interfaces and GPU-accelerated physics simulation — pivoted research direction accordingly.&lt;/p>
+&lt;p>&lt;strong>Affiliations:&lt;/strong> Tongji University Sino-German Industry 4.0 Lab × Siemens | 2023.11 – 2024.02&lt;/p></description></item><item><title>机械臂仿真引擎 — 同济×西门子工业 4.0 实验室</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/robotic-arm-sim/</link><pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/robotic-arm-sim/</guid><description>&lt;a href="https://www.bilibili.com/video/BV1FTnDzVEzA/" target="_blank" rel="noopener"
+class="group flex items-center gap-4 no-underline rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3 my-3 shadow-sm hover:shadow-md hover:border-zinc-300 dark:hover:border-zinc-500 transition-all duration-200">
+&lt;span class="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-lg text-white" style="background:#00a1d6">
+&lt;svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">&lt;path d="M17.813 4.653h.854c1.51.054 2.769.578 3.773 1.574 1.004.995 1.524 2.249 1.56 3.76v7.36c-.036 1.51-.556 2.769-1.56 3.773s-2.262 1.524-3.773 1.56H5.333c-1.51-.036-2.769-.556-3.773-1.56S.036 18.858 0 17.347v-7.36c.036-1.511.556-2.765 1.56-3.76 1.004-.996 2.262-1.52 3.773-1.574h.774l-1.174-1.12a1.234 1.234 0 0 1-.373-.906c0-.356.124-.658.373-.907l.027-.027c.267-.249.573-.373.92-.373.347 0 .653.124.92.373L9.653 4.44c.071.071.134.142.187.213h4.267a.836.836 0 0 1 .16-.213l2.853-2.747c.267-.249.573-.373.92-.373.347 0 .662.151.929.4.267.249.391.551.391.907 0 .356-.124.657-.373.906zM5.333 7.24c-.746.018-1.373.276-1.88.773-.506.498-.769 1.13-.786 1.894v7.52c.017.764.28 1.395.786 1.893.507.498 1.134.756 1.88.773h13.334c.746-.017 1.373-.275 1.88-.773.506-.498.769-1.129.786-1.893v-7.52c-.017-.765-.28-1.396-.786-1.894-.507-.497-1.134-.755-1.88-.773zM8 11.107c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c0-.373.129-.689.386-.947.258-.257.574-.386.947-.386zm8 0c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c.017-.391.15-.711.4-.96.249-.249.56-.373.933-.373z"/>&lt;/svg>
+&lt;/span>
+&lt;span class="flex flex-col min-w-0">
+&lt;span class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate">引擎演示视频 · Bilibili&lt;/span>
+&lt;span class="text-xs text-zinc-500 dark:text-zinc-400 truncate">Three.js 机械臂仿真引擎实时演示&lt;/span>
+&lt;/span>
+&lt;span class="ml-auto flex-shrink-0 text-xs font-medium px-2 py-0.5 rounded-full text-white" style="background:#00a1d6">
+Bilibili
+&lt;/span>
+&lt;svg class="flex-shrink-0 w-4 h-4 text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>&lt;/svg>
+&lt;/a>
+&lt;figure>&lt;img src="featured.png"
+alt="Three.js 实时机械臂可视化 — 调节滑动条旋转参数，模型相应变化。">&lt;figcaption>
+&lt;p>Three.js 实时机械臂可视化 — 调节滑动条旋转参数，模型相应变化。&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;hr>
+&lt;p>同济大学中德工业 4.0 实验室与西门子联合研究项目，用深度强化学习替代传统粒子群优化（PSO），实现更高精度的机械臂控制。&lt;/p>
+&lt;p>&lt;strong>技术工作：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>DQN 智能体&lt;/strong> 用于关节轨迹优化，替代 PSO 基线&lt;/li>
+&lt;li>&lt;strong>Three.js 3D 可视化&lt;/strong> — 滑动条交互式参数控制，实时模型更新，支持导入工业设备场景&lt;/li>
+&lt;li>&lt;strong>SITP 项目结项认证&lt;/strong> 已完成&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>关键洞察：&lt;/strong> 接触 NVIDIA Isaac Sim 后，识别到核心需求并非模型导入/可视化，而是自定义算法接口与 GPU 加速物理仿真 — 据此调整了研究方向。&lt;/p>
+&lt;p>&lt;strong>归属：&lt;/strong> 同济大学中德工业 4.0 实验室 × 西门子 | 2023.11 – 2024.02&lt;/p></description></item><item><title>Smart Car Design — Provincial Competition Silver Award (Team Lead)</title><link>https://miracle-techlink.github.io/vivid-aurora-space/projects/smart-car/</link><pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/projects/smart-car/</guid><description>&lt;p>Led a team in designing and manufacturing a cam-steered autonomous smart car for the provincial-level competition, taking the project from concept through mechanical design, simulation, and hardware implementation.&lt;/p>
+&lt;p>&lt;strong>Role:&lt;/strong> Team Lead — responsible for overall mechanical architecture, steering system design, trajectory modeling, and circuit design.&lt;/p>
+&lt;hr>
+&lt;h3 id="mechanical-design">Mechanical Design&lt;/h3>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/smart-car/cad_v1.png"
+alt="Early-stage CAD concept model — initial chassis layout and wheel configuration.">&lt;figcaption>
+&lt;p>Early-stage CAD concept model — initial chassis layout and wheel configuration.&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/smart-car/featured.png"
+alt="Final SolidWorks detailed render — cam steering mechanism, gear transmission, drive wheels, and onboard camera mount.">&lt;figcaption>
+&lt;p>Final SolidWorks detailed render — cam steering mechanism, gear transmission, drive wheels, and onboard camera mount.&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>The steering system uses a &lt;strong>cam-based mechanism&lt;/strong> to convert rotational motion into precise lateral displacement, eliminating the need for servo actuators and improving mechanical reliability. The drivetrain uses a gear reduction stage paired with brushed DC motors.&lt;/p>
+&lt;hr>
+&lt;h3 id="trajectory-simulation">Trajectory Simulation&lt;/h3>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/smart-car/simulation.jpeg"
+alt="MATLAB trajectory simulation — left: full path trace (x/y in mm); top-right: vehicle turning angle vs. displacement; bottom-right: cam curve profile.">&lt;figcaption>
+&lt;p>MATLAB trajectory simulation — left: full path trace (x/y in mm); top-right: vehicle turning angle vs. displacement; bottom-right: cam curve profile.&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>Developed a MATLAB model to simulate the vehicle trajectory based on the cam profile. Key outputs:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Path trace&lt;/strong> — verifies the car follows the intended curved route&lt;/li>
+&lt;li>&lt;strong>Turning angle curve&lt;/strong> — validates smooth, continuous steering input&lt;/li>
+&lt;li>&lt;strong>Cam profile&lt;/strong> — designed for minimal acceleration jerk and stable contact force&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="charging-circuit">Charging Circuit&lt;/h3>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/smart-car/circuit.png"
+alt="Custom charging circuit schematic — onboard battery management for the competition vehicle.">&lt;figcaption>
+&lt;p>Custom charging circuit schematic — onboard battery management for the competition vehicle.&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>Designed a custom charging circuit with battery management to ensure reliable power delivery during competition runs.&lt;/p>
+&lt;hr>
+&lt;p>&lt;strong>Award:&lt;/strong> Silver Award, Provincial Smart Car Competition | Team Lead
+&lt;strong>Stack:&lt;/strong> SolidWorks · MATLAB · PCB Design · DC Motor Control&lt;/p></description></item><item><title>智能小车设计 — 省赛银奖（队长）</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/smart-car/</link><pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/smart-car/</guid><description>&lt;p>担任队长，带队设计并制造一辆凸轮转向自主智能小车，参加省级竞赛。项目覆盖机械设计、轨迹仿真到硬件实现的全流程。&lt;/p>
+&lt;p>&lt;strong>职责：&lt;/strong> 队长 — 负责整体机械架构、转向系统设计、轨迹建模与电路设计。&lt;/p>
+&lt;hr>
+&lt;h3 id="机械设计">机械设计&lt;/h3>
+&lt;figure>&lt;img src="cad_v1.png"
+alt="初版 CAD 概念模型 — 底盘布局与车轮配置初稿。">&lt;figcaption>
+&lt;p>初版 CAD 概念模型 — 底盘布局与车轮配置初稿。&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>&lt;img src="featured.png"
+alt="SolidWorks 最终详细渲染 — 凸轮转向机构、减速齿轮、驱动车轮与摄像头支架。">&lt;figcaption>
+&lt;p>SolidWorks 最终详细渲染 — 凸轮转向机构、减速齿轮、驱动车轮与摄像头支架。&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>转向系统采用&lt;strong>凸轮机构&lt;/strong>，将旋转运动转化为精确的横向位移，无需舵机，提升机械可靠性。传动部分采用减速齿轮级配合有刷直流电机。&lt;/p>
+&lt;hr>
+&lt;h3 id="轨迹仿真">轨迹仿真&lt;/h3>
+&lt;figure>&lt;img src="simulation.jpeg"
+alt="MATLAB 轨迹仿真 — 左：完整路径轨迹（单位 mm）；右上：车辆转角随位移变化；右下：凸轮曲线轮廓。">&lt;figcaption>
+&lt;p>MATLAB 轨迹仿真 — 左：完整路径轨迹（单位 mm）；右上：车辆转角随位移变化；右下：凸轮曲线轮廓。&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>基于凸轮轮廓建立 MATLAB 仿真模型，验证车辆行驶轨迹。核心输出：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>路径轨迹&lt;/strong> — 验证小车沿预定曲线行驶&lt;/li>
+&lt;li>&lt;strong>转角曲线&lt;/strong> — 确保转向输入平滑连续&lt;/li>
+&lt;li>&lt;strong>凸轮轮廓&lt;/strong> — 设计目标：最小加速度冲击、稳定接触力&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="充电电路">充电电路&lt;/h3>
+&lt;figure>&lt;img src="circuit.png"
+alt="自制充电电路原理图 — 含电池管理，保障比赛期间稳定供电。">&lt;figcaption>
+&lt;p>自制充电电路原理图 — 含电池管理，保障比赛期间稳定供电。&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;hr>
+&lt;p>&lt;strong>奖项：&lt;/strong> 省级智能小车竞赛银奖 | 队长
+&lt;strong>技术栈：&lt;/strong> SolidWorks · MATLAB · PCB 设计 · 直流电机控制&lt;/p></description></item></channel></rss>

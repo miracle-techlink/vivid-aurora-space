@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Surgical AI | Liu Yue — Embodied AI Researcher</title><link>https://miracle-techlink.github.io/vivid-aurora-space/tags/surgical-ai/</link><atom:link href="https://miracle-techlink.github.io/vivid-aurora-space/tags/surgical-ai/index.xml" rel="self" type="application/rss+xml"/><description>Surgical AI</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Mar 2026 00:00:00 +0000</lastBuildDate><image><url>https://miracle-techlink.github.io/vivid-aurora-space/media/icon_hu_982c5d63a71b2961.png</url><title>Surgical AI</title><link>https://miracle-techlink.github.io/vivid-aurora-space/tags/surgical-ai/</link></image><item><title>Endovascular Surgical Robot Platform (stEVE)</title><link>https://miracle-techlink.github.io/vivid-aurora-space/projects/vascular-robot/</link><pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/projects/vascular-robot/</guid><description>&lt;a href="https://github.com/miracle-techlink" target="_blank" rel="noopener"
+class="group flex items-center gap-4 no-underline rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3 my-3 shadow-sm hover:shadow-md hover:border-zinc-300 dark:hover:border-zinc-500 transition-all duration-200">
+&lt;span class="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-lg text-white" style="background:#24292e">
+&lt;svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">&lt;path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>&lt;/svg>
+&lt;/span>
+&lt;span class="flex flex-col min-w-0">
+&lt;span class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate">miracle-techlink / GitHub&lt;/span>
+&lt;span class="text-xs text-zinc-500 dark:text-zinc-400 truncate">stEVE 平台代码仓库&lt;/span>
+&lt;/span>
+&lt;span class="ml-auto flex-shrink-0 text-xs font-medium px-2 py-0.5 rounded-full text-white" style="background:#24292e">
+GitHub
+&lt;/span>
+&lt;svg class="flex-shrink-0 w-4 h-4 text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>&lt;/svg>
+&lt;/a>
+&lt;a href="https://miracle-techlink.github.io/posts/20040508.html" target="_blank" rel="noopener"
+class="group flex items-center gap-4 no-underline rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3 my-3 shadow-sm hover:shadow-md hover:border-zinc-300 dark:hover:border-zinc-500 transition-all duration-200">
+&lt;span class="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-lg text-white" style="background:#6b7280">
+&lt;svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5">&lt;path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/>&lt;path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/>&lt;/svg>
+&lt;/span>
+&lt;span class="flex flex-col min-w-0">
+&lt;span class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate">Blog: VLA 如何落地医疗机器人&lt;/span>
+&lt;span class="text-xs text-zinc-500 dark:text-zinc-400 truncate">miracle-techlink.github.io · 综述文章&lt;/span>
+&lt;/span>
+&lt;span class="ml-auto flex-shrink-0 text-xs font-medium px-2 py-0.5 rounded-full text-white" style="background:#6b7280">
+Link
+&lt;/span>
+&lt;svg class="flex-shrink-0 w-4 h-4 text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>&lt;/svg>
+&lt;/a>
+&lt;p>A complete research platform for AI-assisted endovascular intervention, spanning preoperative 3D planning through intraoperative RL-guided navigation.&lt;/p>
+&lt;p>&lt;strong>Pipeline:&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>CTA → STL&lt;/strong> — TotalSegmentator vessel segmentation, VMTK centerline extraction&lt;/li>
+&lt;li>&lt;strong>SOFA FEM Simulation&lt;/strong> — Cosserat beam guidewire model, realistic vascular deformation&lt;/li>
+&lt;li>&lt;strong>RL Navigation&lt;/strong> — SAC/PPO agents with geodesic distance reward + safety constraints&lt;/li>
+&lt;li>&lt;strong>Biplane DSA&lt;/strong> — DLT triangulation + Beer-Lambert X-ray projection for 2D-3D registration&lt;/li>
+&lt;li>&lt;strong>Intraoperative Correction&lt;/strong> — SE(3) IRC-RL with real DSA feedback&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>Ongoing research:&lt;/strong> Training a diffusion-based trajectory planner on large-scale SOFA-generated synthetic data, transferring to real vascular geometries — targeting to overcome clinical data scarcity.&lt;/p>
+&lt;p>&lt;strong>Affiliations:&lt;/strong> Tongji University × PKU DLIB | 2026&lt;/p>
+&lt;hr>
+&lt;h3 id="system-architecture">System Architecture&lt;/h3>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/vascular-robot/eve_architecture.png"
+alt="stEVE simulation pipeline: vessel tree, instrument, SOFA engine, and fluoroscopy rendering.">&lt;figcaption>
+&lt;p>stEVE simulation pipeline: vessel tree, instrument, SOFA engine, and fluoroscopy rendering.&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;h3 id="clinical-navigation-demo">Clinical Navigation Demo&lt;/h3>
+&lt;figure>&lt;img src="https://miracle-techlink.github.io/vivid-aurora-space/projects/vascular-robot/demo_clinical.png"
+alt="Catheter navigation in patient-specific vascular anatomy — final frame of a clinical test episode.">&lt;figcaption>
+&lt;p>Catheter navigation in patient-specific vascular anatomy — final frame of a clinical test episode.&lt;/p>
+&lt;/figcaption>
+&lt;/figure></description></item><item><title>Synthetic-Data-Driven Diffusion Models for Endovascular Intervention Guidance</title><link>https://miracle-techlink.github.io/vivid-aurora-space/publications/vascular-diffusion/</link><pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/publications/vascular-diffusion/</guid><description/></item><item><title>合成数据驱动的扩散模型用于血管腔内介入引导</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/publications/vascular-diffusion/</link><pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/zh/publications/vascular-diffusion/</guid><description/></item><item><title>血管介入手术机器人平台（stEVE）</title><link>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/vascular-robot/</link><pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate><guid>https://miracle-techlink.github.io/vivid-aurora-space/zh/projects/vascular-robot/</guid><description>&lt;a href="https://github.com/miracle-techlink" target="_blank" rel="noopener"
+class="group flex items-center gap-4 no-underline rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3 my-3 shadow-sm hover:shadow-md hover:border-zinc-300 dark:hover:border-zinc-500 transition-all duration-200">
+&lt;span class="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-lg text-white" style="background:#24292e">
+&lt;svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">&lt;path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>&lt;/svg>
+&lt;/span>
+&lt;span class="flex flex-col min-w-0">
+&lt;span class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate">miracle-techlink / GitHub&lt;/span>
+&lt;span class="text-xs text-zinc-500 dark:text-zinc-400 truncate">stEVE 平台代码仓库&lt;/span>
+&lt;/span>
+&lt;span class="ml-auto flex-shrink-0 text-xs font-medium px-2 py-0.5 rounded-full text-white" style="background:#24292e">
+GitHub
+&lt;/span>
+&lt;svg class="flex-shrink-0 w-4 h-4 text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>&lt;/svg>
+&lt;/a>
+&lt;a href="https://miracle-techlink.github.io/posts/20040508.html" target="_blank" rel="noopener"
+class="group flex items-center gap-4 no-underline rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3 my-3 shadow-sm hover:shadow-md hover:border-zinc-300 dark:hover:border-zinc-500 transition-all duration-200">
+&lt;span class="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-lg text-white" style="background:#6b7280">
+&lt;svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5">&lt;path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/>&lt;path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/>&lt;/svg>
+&lt;/span>
+&lt;span class="flex flex-col min-w-0">
+&lt;span class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 truncate">Blog: VLA 如何落地医疗机器人&lt;/span>
+&lt;span class="text-xs text-zinc-500 dark:text-zinc-400 truncate">miracle-techlink.github.io · 综述文章&lt;/span>
+&lt;/span>
+&lt;span class="ml-auto flex-shrink-0 text-xs font-medium px-2 py-0.5 rounded-full text-white" style="background:#6b7280">
+Link
+&lt;/span>
+&lt;svg class="flex-shrink-0 w-4 h-4 text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>&lt;/svg>
+&lt;/a>
+&lt;p>面向 AI 辅助血管腔内介入的完整研究平台，覆盖术前三维规划至术中 RL 引导导航全流程。&lt;/p>
+&lt;p>&lt;strong>处理流程：&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>CTA → STL&lt;/strong> — TotalSegmentator 血管分割，VMTK 中心线提取&lt;/li>
+&lt;li>&lt;strong>SOFA FEM 仿真&lt;/strong> — Cosserat 梁导丝模型，真实血管形变仿真&lt;/li>
+&lt;li>&lt;strong>RL 导航&lt;/strong> — SAC/PPO 智能体，测地距离奖励 + 安全约束&lt;/li>
+&lt;li>&lt;strong>双平面 DSA&lt;/strong> — DLT 三角测量 + Beer-Lambert X 射线投影，实现 2D-3D 配准&lt;/li>
+&lt;li>&lt;strong>术中校正&lt;/strong> — SE(3) IRC-RL，融合真实 DSA 反馈&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>进行中研究：&lt;/strong> 在大规模 SOFA 生成的合成数据上训练基于扩散模型的轨迹规划器，迁移至真实血管几何结构——目标是克服临床数据稀缺问题。&lt;/p>
+&lt;p>&lt;strong>归属：&lt;/strong> 同济大学 × 北大 DLIB | 2026&lt;/p>
+&lt;hr>
+&lt;h3 id="系统架构">系统架构&lt;/h3>
+&lt;figure>&lt;img src="eve_architecture.png"
+alt="stEVE 仿真流水线：血管树、介入器械、SOFA 引擎与荧光透视渲染。">&lt;figcaption>
+&lt;p>stEVE 仿真流水线：血管树、介入器械、SOFA 引擎与荧光透视渲染。&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;h3 id="临床导航演示">临床导航演示&lt;/h3>
+&lt;figure>&lt;img src="demo_clinical.png"
+alt="患者特异性血管解剖结构中的导管导航——临床测试片段最终帧。">&lt;figcaption>
+&lt;p>患者特异性血管解剖结构中的导管导航——临床测试片段最终帧。&lt;/p>
+&lt;/figcaption>
+&lt;/figure></description></item></channel></rss>
